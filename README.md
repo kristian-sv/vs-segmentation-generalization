@@ -4,13 +4,15 @@ Code and experiment records for the MSc thesis of the same title by
 Kristian Svendsen, University of Bergen, 2026.
 
 <p align="center">
-  <img src="docs/readme_banner.png" alt="Panels a to c: a routine slab MRI, the plain nnU-Net with no prediction, and the augmented nnU-Net outlining the tumor. Panel d: Dice for 13 slab patients, mean 0.364 for plain and 0.728 for augmented training">
+  <img src="docs/readme_banner.png" alt="Panel a: an axial T1 MRI slice of the head with the tumor region boxed. Panels b and c: that region with the plain nnU-Net, which predicts no tumor, and the augmented nnU-Net, which outlines it. Panel d: Dice for 13 slab patients, mean 0.364 for plain and 0.728 for augmented training">
 </p>
 
-*(a–c) One of the 13 routine slab scans, with the reference outline in blue and
+*(a) Axial slice of a routine T1 MRI of the head with a vestibular schwannoma
+(boxed). (b, c) The boxed region with the reference outline in light blue and
 the model prediction in red (models with seed 42). (d) Dice for each of the 13
-patients under plain and augmented training (mean of two seeds each); the
-black line is the mean. One patient is still missed after augmentation.*
+routine slab scans under plain and augmented training (mean of two seeds
+each); the dark line is the mean. One patient is still missed after
+augmentation.*
 
 The thesis asks why T1 MRI segmentation models for vestibular schwannoma (VS)
 that were trained on the standardized VS-SEG dataset fail on routine
@@ -84,7 +86,7 @@ below the plain mean, and passed.
 </p>
 
 *Five MC-RC slab patients: image, plain nnU-Net and augmented nnU-Net (both
-seed 42, re-stacked inputs). Blue: reference. Red: prediction. The plain
+seed 42, re-stacked inputs). Light blue: reference. Red: prediction. The plain
 model returned an empty prediction for four of them; the augmented model
 segmented three of those and scored 0 on VS-MC-RC-016. Image slices are derived
 from VS-MC-RC (CC BY 4.0; see Data).*
@@ -106,7 +108,7 @@ no detectable harm, not as a gain.
 | `analysis/` | Failure analysis and stress test (`model_insight.py`, `model_insight.slurm`) with its case-figure helper (`make_case_figure.py`), the original comparison statistics (`thesis_analysis.py`), the scan-overlap audit (`audit_mcrc_vsseg_scan_overlap.py`), and the dated evidence under `analysis/reports/`; see the [report index](analysis/README.md). |
 | `metadata/` | Patient lists, scanner assignments, tumor volumes and the 22-patient external cohort table. Tables only; no images. |
 | `tests/` | Checks for scoring, prediction export and the nnU-Net runtime. |
-| `docs/` | The three figures shown on this page and the script that makes them from stored figures and tables (`make_readme_figures.py`). They show the stored orange in red; the thesis versions under `analysis/reports/` are unchanged. |
+| `docs/` | The three figures shown on this page and the script that makes them (`make_readme_figures.py`). They are display versions in one blue and red palette; the thesis versions under `analysis/reports/` use blue and orange and are unchanged. |
 | `requirements/`, `requirements.txt` | Python package lists for the analysis and preprocessing helpers. |
 
 `data/`, `outputs/`, `logs/` and the `work/` directories are local and are not
@@ -190,8 +192,8 @@ Two figures show image slices from VS-MC-RC patients with reference and
 predicted outlines: `cases_followup` and `cases_contralateral` (PNG and PDF)
 under `analysis/reports/model_insight_20261012/mcrc_followup/`. They are
 derived from the VS-MC-RC collection (Kujawa et al., 2024) and are shared
-under its CC BY 4.0 license. The banner and the case figure in `docs/` are
-made from the first of them.
+under its CC BY 4.0 license. The banner and the case figure in `docs/` show
+slices of the same patients.
 
 ## Software environment
 
@@ -216,4 +218,4 @@ the top of `analysis/model_insight.py`.
 The code and the author's records in this repository are released under the
 MIT License; see [LICENSE](LICENSE). The license does not cover the VS-SEG and
 VS-MC-RC data, which are not distributed here. The two figures named under
-Data, and the two figures in `docs/` made from them, remain under CC BY 4.0.
+Data, and the two figures in `docs/` that show such slices, remain under CC BY 4.0.
