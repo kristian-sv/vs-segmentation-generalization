@@ -60,6 +60,23 @@ empty predictions fell from 10 to 1 of 26 patient/model outputs per arm. The
 source-validation check required the augmented mean to be no more than 0.01
 below the plain mean, and passed.
 
+<p align="center">
+  <img src="analysis/reports/model_insight_20261012/mcrc_followup/figures/slab_slope.png" width="440" alt="Dice per patient for the 13 MC-RC slab cases under the plain and the augmented nnU-Net">
+</p>
+
+*Dice for each of the 13 MC-RC slab patients under the plain and the augmented
+nnU-Net (mean of seeds 42 and 43). The black line is the arm mean.*
+
+<p align="center">
+  <img src="analysis/reports/model_insight_20261012/mcrc_followup/figures/cases_followup.png" width="560" alt="Five MC-RC slab patients with reference and predicted outlines for the plain and the augmented nnU-Net">
+</p>
+
+*Five MC-RC slab patients: image, plain nnU-Net and augmented nnU-Net (both
+seed 42, re-stacked inputs). Blue: reference. Orange: prediction. The plain
+model returned an empty prediction for four of them; the augmented model
+segmented three of those and scored 0 on VS-MC-RC-016. Image slices are derived
+from VS-MC-RC (CC BY 4.0; see Data).*
+
 **Limits stated in the thesis.** The MC-RC cases had been inspected before the
 intervention was designed and informed its ranges, so the improvement requires
 confirmation on an independently reserved cohort. The orientation correction
