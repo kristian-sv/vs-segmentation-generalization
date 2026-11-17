@@ -1,0 +1,40 @@
+{
+  "patient_ids": [
+    "VS-SEG-004",
+    "VS-SEG-005",
+    "VS-SEG-015",
+    "VS-SEG-019",
+    "VS-SEG-027",
+    "VS-SEG-036",
+    "VS-SEG-072",
+    "VS-SEG-090",
+    "VS-SEG-093",
+    "VS-SEG-099",
+    "VS-SEG-100",
+    "VS-SEG-102",
+    "VS-SEG-108",
+    "VS-SEG-119",
+    "VS-SEG-123",
+    "VS-SEG-138",
+    "VS-SEG-148",
+    "VS-SEG-149",
+    "VS-SEG-161",
+    "VS-SEG-181",
+    "VS-SEG-182",
+    "VS-SEG-190",
+    "VS-SEG-215",
+    "VS-SEG-244"
+  ],
+  "dice": {
+    "n": 24,
+    "mean": 0.9249857805162431,
+    "median": 0.955632757166942,
+    "sample_sd": 0.1094820551712312
+  },
+  "empty_counts": {
+    "nonempty": 24,
+    "both_empty": 0,
+    "prediction_empty": 0,
+    "reference_empty": 0
+  }
+}

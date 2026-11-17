@@ -1,0 +1,11 @@
+{
+  "tolerance_mm": 0.1,
+  "n_cases": 51,
+  "all_cases": {
+    "source_grid_matches": 51
+  },
+  "retained_cases": {
+    "source_grid_matches": 22
+  },
+  "scope": "All selected T1 source DICOM headers and untouched source-label headers; no voxel/anatomical validation implied."
+}

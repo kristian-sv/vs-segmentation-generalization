@@ -1,0 +1,17 @@
+{
+  "rule": "augmented arm mean Dice not more than 0.01 below plain arm (PREREGISTRATION.md, secondary)",
+  "source": "stress-test condition C0 = the 24 original validation images; common scorer; no TTA",
+  "n": 24,
+  "model_means": {
+    "plain_s42": 0.9323421845515086,
+    "plain_s43": 0.9247556324960616,
+    "slabthick_s42": 0.9283337412495634,
+    "slabthick_s43": 0.9399630239332204
+  },
+  "plain_arm_mean": 0.9285489085237852,
+  "augmented_arm_mean": 0.9341483825913919,
+  "difference": 0.005599474067606636,
+  "passes": true,
+  "frozen_september_plain_s42_mean": 0.9323443644400453,
+  "note": "plain_s42 C0 differs from the frozen September export by one voxel in VS-SEG-122 (see FINDINGS.md)"
+}

@@ -1,0 +1,21 @@
+# VS Dataset Preprocessing Requirements
+# Install with: pip install -r requirements_preprocess.txt
+
+# Core DICOM and medical imaging
+pydicom>=2.4.0
+SimpleITK>=2.3.0
+nibabel>=5.0.0
+
+# Data handling
+numpy>=1.24.0
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# RTSTRUCT conversion (try both, use whichever works)
+rt-utils>=1.2.7
+dcmrtstruct2nii>=1.0.19
+
+# Optional: for visualization
+# matplotlib>=3.7.0
+# scikit-image>=0.21.0
+natsort

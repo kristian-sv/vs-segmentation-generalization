@@ -1,0 +1,8 @@
+{
+  "processed_images": 217,
+  "processed_masks": 217,
+  "properties": 217,
+  "planning_patients": 193,
+  "frozen_hashes_verified": true,
+  "test_or_external_in_staging": false
+}

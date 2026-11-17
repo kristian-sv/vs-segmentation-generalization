@@ -1,0 +1,102 @@
+{
+  "method": "paired patient percentile bootstrap",
+  "seed": 42,
+  "replicates": 10000,
+  "confidence": 0.95,
+  "unit": "patient; same resampled patients for both arms of every contrast",
+  "scope": "Conditional on fitted models and evaluated cohort; not training or site uncertainty.",
+  "cohorts": {
+    "validation": {
+      "nnunet_s42 - manual_six_run_mean": {
+        "n": 24,
+        "mean_difference": 0.013147678375458471,
+        "ci95": [
+          -0.007692885504673856,
+          0.02684648284625648
+        ],
+        "fraction_replicates_above_zero": 0.9123,
+        "patients_a_better": 23,
+        "patients_b_better": 1
+      },
+      "dropout01_s42 - baseline_s42": {
+        "n": 24,
+        "mean_difference": 0.002218746420008258,
+        "ci95": [
+          -0.002216307866189506,
+          0.008370961059938741
+        ],
+        "fraction_replicates_above_zero": 0.7662,
+        "patients_a_better": 11,
+        "patients_b_better": 13
+      },
+      "dropout01_s43 - baseline_s43": {
+        "n": 24,
+        "mean_difference": 0.0009296234253007759,
+        "ci95": [
+          -0.004486016053875273,
+          0.005305797391577449
+        ],
+        "fraction_replicates_above_zero": 0.6697,
+        "patients_a_better": 18,
+        "patients_b_better": 6
+      },
+      "dropout01_s44 - baseline_s44": {
+        "n": 24,
+        "mean_difference": 0.0029351546290894565,
+        "ci95": [
+          -0.0031669820987941326,
+          0.010180205007417198
+        ],
+        "fraction_replicates_above_zero": 0.8187,
+        "patients_a_better": 17,
+        "patients_b_better": 7
+      }
+    },
+    "mcrc": {
+      "nnunet_s42 - manual_six_run_mean": {
+        "n": 22,
+        "mean_difference": 0.057947575188173124,
+        "ci95": [
+          -0.09459677161296517,
+          0.21523671660333502
+        ],
+        "fraction_replicates_above_zero": 0.7651,
+        "patients_a_better": 12,
+        "patients_b_better": 8
+      },
+      "dropout01_s42 - baseline_s42": {
+        "n": 22,
+        "mean_difference": 0.024240158757190166,
+        "ci95": [
+          -0.008645147680458393,
+          0.06370240628606279
+        ],
+        "fraction_replicates_above_zero": 0.918,
+        "patients_a_better": 12,
+        "patients_b_better": 6
+      },
+      "dropout01_s43 - baseline_s43": {
+        "n": 22,
+        "mean_difference": -0.07169997625705714,
+        "ci95": [
+          -0.16067518783997556,
+          0.004637217874630789
+        ],
+        "fraction_replicates_above_zero": 0.0325,
+        "patients_a_better": 5,
+        "patients_b_better": 13
+      },
+      "dropout01_s44 - baseline_s44": {
+        "n": 22,
+        "mean_difference": 0.008827582567841748,
+        "ci95": [
+          -0.0673032225663245,
+          0.08303082570779367
+        ],
+        "fraction_replicates_above_zero": 0.6029,
+        "patients_a_better": 13,
+        "patients_b_better": 7
+      }
+    }
+  }
+}

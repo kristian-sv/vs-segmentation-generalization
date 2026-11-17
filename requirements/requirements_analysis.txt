@@ -1,0 +1,5 @@
+# Performance-analysis reports and dashboard
+pandas
+nibabel
+matplotlib
+streamlit

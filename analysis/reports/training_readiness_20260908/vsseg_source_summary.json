@@ -1,0 +1,45 @@
+{
+  "n_cases": 217,
+  "splits": {
+    "train": 193,
+    "val": 24
+  },
+  "source_rtstruct_exact_masks": 217,
+  "source_rtstruct_total_disagree_voxels": 0,
+  "json_exact_masks": 214,
+  "json_unrasterized_cases": [
+    "VS-SEG-008",
+    "VS-SEG-055"
+  ],
+  "json_raster_difference_cases": [
+    "VS-SEG-156"
+  ],
+  "all_image_label_affines_identical": true,
+  "max_dicom_corner_error_mm": 9.050134388930282e-06,
+  "source_dicom_header_slices": 26720,
+  "visual_cases": [
+    "VS-SEG-001",
+    "VS-SEG-002",
+    "VS-SEG-031",
+    "VS-SEG-135",
+    "VS-SEG-008",
+    "VS-SEG-055",
+    "VS-SEG-174"
+  ],
+  "visual_train": 5,
+  "visual_val": 2,
+  "displayed_planes": 42,
+  "jobs": [
+    2185701,
+    2186078
+  ],
+  "data_lock_sha256": "216163538726545d8898208227142992d6f945a6921fe34dae2c29de04888cba",
+  "evidence_sha256": {
+    "work/full/case_checks.csv": "c4addc0eaecb546c89c0b74c7a98abc0a87694a503d760d504ae377271f0fdbf",
+    "work/full/summary.json": "689f62ef76eea5b3729ed47aaf61f284a6fd7cd26f68aad541eb2619ef49b62a",
+    "work/exceptions/case_checks.csv": "5dffda8c688962ebd46692dc974e336d3d27e6cf0f2e1ca60a52643fce5894bb",
+    "work/exceptions/summary.json": "7baa5c31d88dd8abdeb58ceddea4d06094e0073f8321be96ac95533a6584858e",
+    "work/final_case_checks.csv": "85715f1ec2075f1b35da611cf3be68df527526cf4e54a9369ac60d5d191ba994",
+    "work/visual_review.csv": "f0c13cbedcb73e8aa3edb70bd74dcf6b43b02a1b0d8278679a74d8d1ca507948"
+  }
+}

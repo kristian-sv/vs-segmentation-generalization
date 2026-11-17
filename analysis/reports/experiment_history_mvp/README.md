@@ -1,0 +1,36 @@
+The experiment history, checked 7 September 2026
+
+[experiments.csv](experiments.csv) contains **84 run attempts, not 84 successful or independent experiments**. The clearest reusable comparison is six T1 configurations. Their internal test Dice scores are close (0.884–0.892); their historical 51-case MC-RC scores differ more (0.431–0.529). These external results remain exploratory.
+
+A U-Net predicts a tumor mask from an MRI, combining coarse image context with fine spatial detail. T1 and T2 are different MRI contrasts; changing between them changes the input problem. Dice measures mask overlap, from 0 to 1. Validation scores were used during training to select the saved checkpoint. Test scores evaluate that selected checkpoint; they are not validation peaks, and repeated inspection can compromise their role as an independent final assessment.
+
+The main families are:
+
+- **Early March baseline/debugging attempts:** saved settings show changes in voxel spacing, volume/patch sizes, learning rate, batch size and patience. Logs retain crop, tensor-size and loader failures. Many earlier folders lack saved source; 21 attempts have unknown modality. Names do not establish a controlled sequence of improvements.
+- **March 11–12 T2 development:** saved loaders explicitly use T2. Attempts cover learning rate/warmup, sampling and batching, augmentation, patch size, loss, dropout, weight decay and sliding-window overlap. The later 2.5D branch changes architecture and includes failures. Different source groups and missing settings prevent treating the family as one uniform sweep.
+- **March 23–24 T1 development:** 14 attempts include a failed unnamed baseline, a completed unnamed baseline, and two attempts for each of six named configurations. The six March 23 runs have complete evaluation JSONs. All six March 24 runs finish training, print test/external means, then fail in scanner reporting with `KeyError: ['t2_path']`.
+
+The six T1 configurations use seed 42, a MONAI 3D U-Net with channels 32/64/128/256/512, and the same saved internal code. Against `t1_baseline_20260323_151357`, the recovered changes are:
+
+- `t1_baseline`: learning rate 0.001, dropout 0.2, DiceFocal loss, patch 192 × 192 × 64, ten warmup epochs and patience 75.
+- `t1_diceCE`: DiceCE replaces DiceFocal loss.
+- `t1_lr1e4`: learning rate becomes 0.0001.
+- `t1_dropout01`: dropout becomes 0.1.
+- `t1_patch256`: patch becomes **256 × 256 × 128**, not 256 cubed.
+- `t1_augment`: enables spatial and elastic augmentation; baseline already includes flips and intensity augmentation.
+
+Validation peaks range from 0.9082 to 0.9176. Baseline peaks at epoch 166 and stops at 241; dropout 0.1 peaks at 267 and reaches epoch 300. DiceCE has the highest internal test mean (0.89234), while dropout 0.1 has the highest 51-case external mean (0.52899). These observations do not establish a performance ceiling, a mechanism, or a statistically reliable winner.
+
+**70 checkpoint files have 53 distinct byte hashes, with 15 duplicate groups.** Each March 23/24 T1 pair is identical; `baseline_20260323_150311` also matches the T1 baseline pair. The two T2 sliding-window overlap runs have identical checkpoints but different validation/test scores, illustrating why evaluator settings matter. Identical checkpoints are not independent repeatability evidence. Different file hashes alone do not prove different tensor weights. All 75 available configuration JSONs record seed 42; nine attempts have unknown seed.
+
+The table preserves original run evaluations, the **49-case T1 reevaluation**, the **24 April 51-case T1 evaluation**, and the **24 April 110-case T2 evaluation** separately inside `external_scores`. Each has its count, version label and evidence path. These labels identify artifacts; exact standalone evaluator code versions are unknown. Earlier T2 models evaluated on the 49-case T1 cohort are mismatched comparisons. The 110-case file's “baseline” is a T1-trained checkpoint evaluated on T2. Original March 23 T1 evaluation also uses the saved external loader's T2 column (92 cases). None should be pooled with matched T1-to-T1 results. Scores attached to identical checkpoint aliases are marked as links, not additional evaluations.
+
+Reuse checkpoints, validation curves, recovered settings and existing per-case scores for a descriptive history. Fair comparisons require matching modality, checkpoint identity, evaluation version/cohort and relevant settings. `comparability_group` identifies matching saved internal code after excluding external-only functions; it is **provisional**, because immutable patient lists, label/preprocessing versions and all runtime details were not preserved. Groups ending in `protocol_unknown` are holding categories, not permission to compare. `reference_run` gives an analytical baseline, not a recovered historical parent. `changed_settings` compares saved fields and does not imply why a change was made.
+
+The context notes flag patient overlap and prior exposure to test/external results. This report does not redo patient exclusions, safeguards or alignment checks, or certify them as resolved. The older experiment note's explanation of T2-to-T1 gains as mainly schedule/hyperparameter changes is incomplete: modality changed too. No researcher motivation or causal decision order is inferred.
+
+Reproduce with `python3.11 analysis/reports/experiment_history_mvp/build_history.py` from the repository root. This standard-library helper reads historical files and immutable Git objects; it never imports training code or loads tensors. Effective JSON settings take priority. Overrides are recovered where possible from W&B invocation arguments, the recorded commit plus saved diff, and the historical launcher. Missing values are `unknown`; `validation_evidence` distinguishes precise CSV peaks from rounded partial logs. March 24 test means retain log precision, with precise matching-checkpoint evidence recorded separately.
+
+Checks confirm 84 folders, 70 checkpoints, 63 training CSVs, 50 evaluation JSONs, 55 experiment/source snapshots and 20 older config JSONs against the September 4 inventory. Status totals: 50 with training/evaluation recorded, eight with completed training but failed evaluation, eleven failed before completed training, twelve with partial artifacts and unknown completion, and three without training results. All twelve published T1 hashes were independently checked, then hashing was extended to every checkpoint. All six main T1 rows and selected earlier runs were traced to settings, logs and evaluations. The helper verifies unique rows, missing cells, external case counts and saved April summary arithmetic against per-case files; it computes no new model metrics.
+
+Run input SHA-256 values are in `evidence_sha256`, audit hashes in `inventory_check_sha256`, and reconstructed Git-file hashes in `historical_git_sources`. File metadata is checked before/after reading and before writing; changed inputs trigger retries and changed overall snapshots are rebuilt. No changing inputs were observed. Context versions checked: `experiment-results.md` SHA-256 `efbfa8ed104f4226ff7ceb57a2d4bad8544f1cf91fccaea38d4cc6f480bea73e`; assessment SHA-256 `b0a49f1b2d544b7b47c5e3d1d71dabf8a3969973e5a8a37ddf894ab33f7b0df9`.

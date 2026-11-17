@@ -1,0 +1,79 @@
+{
+  "method": "paired patient percentile bootstrap of condition minus C0 (manual: per-patient mean of six runs)",
+  "replicates": 10000,
+  "seed": 42,
+  "paired_comparisons": {
+    "manual: S40edge - S40": {
+      "mean": 0.007137962910993241,
+      "ci95": [
+        -0.030839729655262504,
+        0.04805443413707937
+      ],
+      "patients_better": 12,
+      "patients_worse": 12
+    },
+    "nnunet: S40edge - S40": {
+      "mean": -0.009564107763459518,
+      "ci95": [
+        -0.03709751410627252,
+        0.012223344923473113
+      ],
+      "patients_better": 13,
+      "patients_worse": 10
+    },
+    "manual: S40T3 - S40": {
+      "mean": -0.1666993636757926,
+      "ci95": [
+        -0.23283668785308478,
+        -0.10664028708888083
+      ],
+      "patients_better": 1,
+      "patients_worse": 22
+    },
+    "nnunet: S40T3 - S40": {
+      "mean": -0.31822218793361984,
+      "ci95": [
+        -0.4769947431845678,
+        -0.17205668304863203
+      ],
+      "patients_better": 1,
+      "patients_worse": 22
+    },
+    "manual: S40T3 - T3": {
+      "mean": -0.3274132392841202,
+      "ci95": [
+        -0.44460570586739523,
+        -0.2152703638743482
+      ],
+      "patients_better": 3,
+      "patients_worse": 21
+    },
+    "nnunet: S40T3 - T3": {
+      "mean": -0.30839332627906696,
+      "ci95": [
+        -0.4682739231337787,
+        -0.15426822075746138
+      ],
+      "patients_better": 9,
+      "patients_worse": 15
+    },
+    "COR_thin: restacked - stored nnU-Net": {
+      "mean": 0.7039603849421359,
+      "ci95": [
+        0.5751309921715556,
+        0.8215505616525178
+      ],
+      "patients_better": 24,
+      "patients_worse": 0
+    },
+    "COR_thick: restacked - stored nnU-Net": {
+      "mean": 0.28066485937850305,
+      "ci95": [
+        0.11999303743932144,
+        0.4447031726401651
+      ],
+      "patients_better": 15,
+      "patients_worse": 9
+    }
+  }
+}

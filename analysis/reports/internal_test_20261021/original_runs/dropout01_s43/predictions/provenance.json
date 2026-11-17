@@ -1,0 +1,61 @@
+{
+  "argv": [
+    "src/evaluate.py",
+    "manual-export",
+    "--manifest",
+    "analysis/reports/internal_test_20261021/test_manifest.csv",
+    "--manual",
+    "dropout01",
+    "--seed",
+    "43",
+    "--checkpoint",
+    "outputs/t1/manual/t1_mvp_dropout01_s43_20260908_193237/best_model.pt",
+    "--output",
+    "analysis/reports/internal_test_20261021/original_runs/dropout01_s43/predictions"
+  ],
+  "manifest_sha256": "4c55817caa7f416e5ddee8f2f65cc6a01a83c146f3079d4016f37c6e8455d75f",
+  "scorer_sha256": "393c5936eab65a3fc1eabb3dac41ee3339dc99995dc3f90c4a231224635a714a",
+  "protocol_sha256": "5bfa00c3f8a20b2abd5ba499546955439b7fb9801a9fa318934730d7526b0e34",
+  "checkpoint_sha256": "248ca34a3f943bbbf3bbd8dcd3d610cebe6dad41b2f8a5fb8161e28c080f6a3b",
+  "experiment_config": "/cluster/projects/nn11127k/ksv023/thesis/outputs/t1/manual/t1_mvp_dropout01_s43_20260908_193237/experiment_config.json",
+  "experiment_config_sha256": "c2c1a0cda14c8239107eed14267a84a60fb59b0c2b80bb480cf480c79764957c",
+  "frozen_config": {
+    "patch_size": [
+      192,
+      192,
+      64
+    ],
+    "pixdim": [
+      1,
+      1,
+      1.0
+    ],
+    "batch_size": 1,
+    "lr": 0.001,
+    "epochs": 300,
+    "patience": 75,
+    "num_workers": 4,
+    "sw_batch_size": 8,
+    "channels": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "num_samples": 4,
+    "warmup_epochs": 10,
+    "weight_decay": 1e-05,
+    "dropout": 0.1,
+    "pos_neg_ratio": 3,
+    "sw_overlap": 0.25,
+    "seed": 43,
+    "modality": "T1",
+    "image_col": "t1_path",
+    "experiment_name": "t1_mvp_dropout01_s43"
+  },
+  "tta": false,
+  "ensemble": false,
+  "postprocessing": null,
+  "continuous_export": "softmax of blended logits, bilinear inverse, then argmax"
+}

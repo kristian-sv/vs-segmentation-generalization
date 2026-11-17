@@ -1,0 +1,23 @@
+{
+  "analysis_type": "retrospective_reaggregation",
+  "original": 51,
+  "retained": 22,
+  "excluded": 29,
+  "excluded_by_split": {
+    "train": 25,
+    "val": 4
+  },
+  "documented_nonidentical_alias_links": [],
+  "alias_policy": "All source IDs/path IDs and UID-linked directory/overlap IDs are unioned across all timepoints. No numeric-suffix or date-only guesses.",
+  "input_sha256": {
+    "data/splits/vsseg_baseline.csv": "b12635ecf8992d14fc7636ae46baa8d5000111c4784ffc371fe4144bd0fc659e",
+    "metadata/vs_mcrc_master.csv": "8795c787117e9b93fd7e3c38cc43b641105930dbbf7a0006216fa6b10130102f",
+    "data/raw/datasets/VS-MC-RC-Segmentations_with_pathname_spreadsheet-Release2023/Vestibular-Schwannoma-MC-RC_NIfTI-segmentation-info3.csv": "f9d8d2b2ecab74824d02c95fdccd42f60c82f5e17746b830e3c67f73f9a372eb",
+    "data/raw/datasets/series_overlap.csv": "a47ec7b1e85ee8b69d288d7de6d2226d41a50ad2670946e18ae238677f9fd185",
+    "data/raw/datasets/DirectoryNamesMappingModality.csv": "81068588029b8d5b1bc623a227c94ee4eff660cef4eb4a574297c2a172a18a62",
+    "metadata/vs_seg_t1_master.csv": "ae0dca0b83d78c94a6411b0af802fb1e3bbf3cda49866c6f8bf3f498903b0f31",
+    "metadata/vs_seg_master.csv": "7f25766daa8c4b10947efb686572964a0070b3a0518152ae554914fa82f2f144",
+    "outputs/session_20260424/mcrc_t1_important_models_per_case.csv": "5eebed761dceff545771f14f76128b596c16a2c79586b9f0e2f806a4cef696ce"
+  },
+  "limitation": "Previously inspected retrospective cohort; unknown influence on development decisions. Not an untouched test."
+}

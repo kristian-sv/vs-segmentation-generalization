@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "diagnostic_only": true,
+  "training_updates": 3,
+  "training_ids": [
+    "VS-SEG-001",
+    "VS-SEG-003"
+  ],
+  "validation_id": "VS-SEG-002",
+  "validation_selection": "largest physical bounding volume among 24 validation headers",
+  "validation_shape_after_transforms": [
+    1,
+    224,
+    224,
+    192
+  ],
+  "patch_batch_shape": [
+    4,
+    1,
+    192,
+    192,
+    64
+  ],
+  "loading_seconds": 1.602967457001796,
+  "update_seconds": [
+    1.1041900450072717,
+    0.11182455100060906,
+    0.09012140400591306
+  ],
+  "validation_seconds": 0.0863880889955908,
+  "peak_gpu_allocated_gib": 2.100855827331543,
+  "gpu": "NVIDIA GH200 120GB",
+  "saved_model": false,
+  "test_scores": false
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "nnunet",
+  "machine": "aarch64",
+  "gpu": "NVIDIA GH200 120GB",
+  "gpu_memory_gib": 95.0,
+  "versions": {
+    "torch": "2.8.0a0+5228986c39.nv25.6",
+    "numpy": null,
+    "nibabel": "5.4.2",
+    "scipy": "1.17.1",
+    "nnunetv2": "2.8.1"
+  },
+  "cuda": "12.9",
+  "gpu_forward_backward": "passed",
+  "compiled": true
+}

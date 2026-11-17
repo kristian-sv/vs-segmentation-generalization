@@ -1,0 +1,6 @@
+variable,n,spearman_rho,outcome,source,note
+coverage_mm,13,0.3319581456671338,per_case.csv: arm_difference,cases.csv: n_slices x slice_spacing_mm,"EXPLORATORY, post hoc; n = 13 is too small for firm conclusions; no p-values computed"
+slice_thickness,13,0.35922082268961053,per_case.csv: arm_difference,cases.csv: slice_thickness,"EXPLORATORY, post hoc; n = 13 is too small for firm conclusions; no p-values computed"
+slice_spacing_mm,13,0.24100555201164117,per_case.csv: arm_difference,cases.csv: slice_spacing_mm,"EXPLORATORY, post hoc; n = 13 is too small for firm conclusions; no p-values computed"
+reference_ml,13,-0.12087912087912088,per_case.csv: arm_difference,per_case.csv: reference_ml,"EXPLORATORY, post hoc; n = 13 is too small for firm conclusions; no p-values computed"
+tumor_to_fov_edge_mm,13,0.12087912087912088,per_case.csv: arm_difference,cases.csv: tumor_to_fov_edge_mm,"EXPLORATORY, post hoc; n = 13 is too small for firm conclusions; no p-values computed"

@@ -1,0 +1,224 @@
+{
+  "method": "Paired patient percentile bootstrap of a mean difference (same convention as thesis_analysis.py).",
+  "replicates": 10000,
+  "seed": 42,
+  "patients": [
+    "VS-SEG-004",
+    "VS-SEG-005",
+    "VS-SEG-015",
+    "VS-SEG-019",
+    "VS-SEG-027",
+    "VS-SEG-036",
+    "VS-SEG-072",
+    "VS-SEG-090",
+    "VS-SEG-093",
+    "VS-SEG-099",
+    "VS-SEG-100",
+    "VS-SEG-102",
+    "VS-SEG-108",
+    "VS-SEG-119",
+    "VS-SEG-123",
+    "VS-SEG-138",
+    "VS-SEG-148",
+    "VS-SEG-149",
+    "VS-SEG-161",
+    "VS-SEG-181",
+    "VS-SEG-182",
+    "VS-SEG-190",
+    "VS-SEG-215",
+    "VS-SEG-244"
+  ],
+  "arm_value": "per-patient mean of the two seed Dice scores; no mask ensembling",
+  "arm_empty": "mean of the two seeds' empty-prediction counts (as in mcrc_followup/tables/summary.csv)",
+  "primary_a": {
+    "rule": "(a) unchanged internal test (C0): augmented-arm minus plain-arm mean Dice >= -0.01",
+    "plain_arm_mean": 0.9164552142150262,
+    "augmented_arm_mean": 0.9345326820231534,
+    "difference": 0.018077467808127187,
+    "ci95": [
+      0.003397219091503413,
+      0.04179143321787201
+    ],
+    "passes": true,
+    "secondary_ci_lower_bound_above_margin": true,
+    "plain_arm_empty": 0.0,
+    "augmented_arm_empty": 0.0
+  },
+  "primary_b": {
+    "rule": "(b) internal test S40T3: paired bootstrap 95% CI of augmented-minus-plain excludes 0 (above) and augmented arm has no more empty predictions than plain",
+    "plain_arm_mean": 0.5789184747471531,
+    "augmented_arm_mean": 0.8847282596591693,
+    "difference": 0.3058097849120162,
+    "ci95": [
+      0.1832040478320705,
+      0.43790384982128927
+    ],
+    "plain_arm_empty": 6.5,
+    "augmented_arm_empty": 0.0,
+    "empty_per_model": {
+      "plain_s42": 8,
+      "plain_s43": 5,
+      "slabthick_s42": 0,
+      "slabthick_s43": 0
+    },
+    "classification": "beneficial",
+    "passes": true
+  },
+  "secondary_by_condition": {
+    "C0 (as_stored)": {
+      "difference": 0.018077467808127187,
+      "ci95": [
+        0.003397219091503413,
+        0.04179143321787201
+      ],
+      "plain_arm_empty": 0.0,
+      "augmented_arm_empty": 0.0
+    },
+    "S50 (as_stored)": {
+      "difference": 0.024704877517933085,
+      "ci95": [
+        -0.001542196659673129,
+        0.07094698252385677
+      ],
+      "plain_arm_empty": 0.5,
+      "augmented_arm_empty": 0.0
+    },
+    "S40 (as_stored)": {
+      "difference": 0.11521275908227656,
+      "ci95": [
+        0.035873730540093164,
+        0.21771543500907098
+      ],
+      "plain_arm_empty": 1.0,
+      "augmented_arm_empty": 0.0
+    },
+    "S33 (as_stored)": {
+      "difference": 0.17147528558666045,
+      "ci95": [
+        0.06859827522854885,
+        0.29269451085558484
+      ],
+      "plain_arm_empty": 2.5,
+      "augmented_arm_empty": 0.0
+    },
+    "S40edge (as_stored)": {
+      "difference": 0.09883100215663447,
+      "ci95": [
+        0.02345975716785183,
+        0.20083407833002168
+      ],
+      "plain_arm_empty": 0.5,
+      "augmented_arm_empty": 0.0
+    },
+    "T3 (as_stored)": {
+      "difference": 0.013311880839749416,
+      "ci95": [
+        -0.01360765348376015,
+        0.043507953652885636
+      ],
+      "plain_arm_empty": 0.5,
+      "augmented_arm_empty": 0.0
+    },
+    "T4 (as_stored)": {
+      "difference": 0.019579887274772886,
+      "ci95": [
+        -0.013435449384384438,
+        0.06338686574687016
+      ],
+      "plain_arm_empty": 1.0,
+      "augmented_arm_empty": 0.5
+    },
+    "S40T3 (as_stored)": {
+      "difference": 0.3058097849120162,
+      "ci95": [
+        0.1832040478320705,
+        0.43790384982128927
+      ],
+      "plain_arm_empty": 6.5,
+      "augmented_arm_empty": 0.0
+    },
+    "AP (as_stored)": {
+      "difference": 0.060821750948238724,
+      "ci95": [
+        0.017919754958656837,
+        0.1159578669143989
+      ],
+      "plain_arm_empty": 0.0,
+      "augmented_arm_empty": 0.0
+    },
+    "COR_thin (as_stored)": {
+      "difference": 0.6091581611386302,
+      "ci95": [
+        0.47885353345969517,
+        0.7367153424799121
+      ],
+      "plain_arm_empty": 13.5,
+      "augmented_arm_empty": 0.5
+    },
+    "COR_thin (restacked)": {
+      "difference": 0.12956546777142855,
+      "ci95": [
+        0.05987831563693998,
+        0.21938440850023322
+      ],
+      "plain_arm_empty": 0.5,
+      "augmented_arm_empty": 0.0
+    },
+    "COR_thick (as_stored)": {
+      "difference": 0.15643867245709286,
+      "ci95": [
+        0.0717113098017875,
+        0.25562880895847245
+      ],
+      "plain_arm_empty": 5.5,
+      "augmented_arm_empty": 1.5
+    },
+    "COR_thick (restacked)": {
+      "difference": 0.06842180892815296,
+      "ci95": [
+        0.02601780918952018,
+        0.12733764464311967
+      ],
+      "plain_arm_empty": 0.5,
+      "augmented_arm_empty": 0.5
+    }
+  },
+  "original_runs": {
+    "nnU-Net s42 - manual six-run mean": {
+      "mean": 0.028115259824447607,
+      "ci95": [
+        0.0032913045240906902,
+        0.06693359023385793
+      ],
+      "patients_higher": 20,
+      "patients_lower": 4
+    },
+    "dropout01_s42 - baseline_s42": {
+      "mean": 0.0009187830430916893,
+      "ci95": [
+        -0.0013892810072871167,
+        0.0036619554267428734
+      ],
+      "patients_higher": 11,
+      "patients_lower": 12
+    },
+    "dropout01_s43 - baseline_s43": {
+      "mean": 0.0004040890700707186,
+      "ci95": [
+        -0.0020306309870864923,
+        0.0026749685062841463
+      ],
+      "patients_higher": 15,
+      "patients_lower": 9
+    },
+    "dropout01_s44 - baseline_s44": {
+      "mean": -0.0058003231016371904,
+      "ci95": [
+        -0.021276182403114883,
+        0.004175981569539292
+      ],
+      "patients_higher": 11,
+      "patients_lower": 13
+    }
+  }
+}

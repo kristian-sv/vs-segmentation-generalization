@@ -1,0 +1,29 @@
+# Local data, outputs and logs
+data/
+cache/
+outputs/
+logs/
+work/
+
+# Image volumes, DICOM files and model checkpoints are never committed
+*.nii
+*.nii.gz
+*.dcm
+*.pt
+*.pth
+
+# Python environments and caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pip_arm64/
+.venv-analysis/
+myenv/
+preproc_env/
+
+# Credentials, logs and system files
+.env
+.env.*
+*.log
+.DS_Store
+._*

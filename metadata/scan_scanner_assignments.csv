@@ -1,0 +1,169 @@
+patient_id,modality,manufacturer,model,field_strength,series_description,shape,spacing,match_method
+VS-MC-RC-001,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 30)","(0.527344, 0.527344, 0.699998)",exact
+VS-MC-RC-002,T1,GE MEDICAL SYSTEMS,SIGNA EXCITE,1.5,_T1_Ax T1 POST GAD,"(512, 512, 10)","(0.468744, 0.468744, 3.0)",exact
+VS-MC-RC-002,T2,GE MEDICAL SYSTEMS,SIGNA EXCITE,1.5,_T2_Reformatted,"(512, 512, 38)","(0.3125, 0.3125, 0.800001)",exact
+VS-MC-RC-003,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.500003)",exact
+VS-MC-RC-003,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 30)","(0.527344, 0.527344, 0.7)",exact
+VS-MC-RC-004,T2,Philips Healthcare,Ingenia,3,_T2_MPR cor,"(480, 480, 85)","(0.291667, 0.291667, 0.291667)",exact
+VS-MC-RC-005,T1,GE MEDICAL SYSTEMS,SIGNA EXCITE,1.5,_T1_AX T1 FS 2.5 MM + C,"(256, 256, 18)","(0.8594, 0.8594, 2.7)",exact
+VS-MC-RC-005,T2,GE MEDICAL SYSTEMS,SIGNA EXCITE,1.5,_T2_Ax 3D FIESTA,"(512, 512, 144)","(0.507815, 0.507819, 0.4)",exact
+VS-MC-RC-006,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-007,T2,Philips Medical Systems,Achieva,3,_T2_MPR cor,"(480, 480, 75)","(0.291667, 0.291667, 0.291667)",exact
+VS-MC-RC-009,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra_2mm,"(448, 512, 18)","(0.410156, 0.410156, 2.2)",exact
+VS-MC-RC-009,T2,SIEMENS,Avanto,1.5,_T2_(TRIGEMINAL) t2_ci3d_tra_iso,"(384, 512, 88)","(0.351562, 0.351562, 0.7)",exact
+VS-MC-RC-010,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.499999)",exact
+VS-MC-RC-010,T2,SIEMENS,Avanto,1.5,_T2_COR MPR CISS,"(512, 512, 75)","(0.351562, 0.351562, 0.4)",size_only
+VS-MC-RC-011,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 18)","(0.3516, 0.3516, 2.499999)",exact
+VS-MC-RC-011,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.499995)",exact
+VS-MC-RC-012,T1,Philips Medical Systems,Achieva,1.5,_T1_T1W_SE GAD,"(288, 288, 16)","(0.555556, 0.555556, 3.3)",exact
+VS-MC-RC-012,T2,GE MEDICAL SYSTEMS,DISCOVERY MR750,3,_T2_FIESTA-C ARC,"(512, 512, 72)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-013,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 96)","(0.8203, 0.8203, 1.500003)",exact
+VS-MC-RC-013,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-015,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 30)","(0.527344, 0.527344, 0.699999)",exact
+VS-MC-RC-016,T1,SIEMENS,Avanto,1.5,_T1_t1_vibe_fs_tra,"(384, 512, 36)","(0.439453, 0.439453, 0.91)",exact
+VS-MC-RC-019,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 16)","(0.3516, 0.3516, 2.499997)",exact
+VS-MC-RC-019,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-020,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-020,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 60)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-021,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.5)",exact
+VS-MC-RC-022,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-022,T2,Philips Medical Systems,Intera,1.5,_T2_T2_3D_DRIVE AX,"(512, 512, 60)","(0.390625, 0.390625, 0.599995)",exact
+VS-MC-RC-024,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2.5mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 3.125)",exact
+VS-MC-RC-024,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-025,T1,SIEMENS,TrioTim,3,_T1_t1_tse_tra_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.500001)",exact
+VS-MC-RC-025,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.499998)",exact
+VS-MC-RC-026,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 13)","(0.3516, 0.3516, 2.500003)",exact
+VS-MC-RC-026,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.499999)",exact
+VS-MC-RC-027,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR BRAVO+C,"(256, 256, 124)","(0.9375, 0.9375, 1.200001)",exact
+VS-MC-RC-027,T2,Philips Healthcare,Ingenia,3,_T2_T2W_DRIVE_HR Tra,"(480, 480, 50)","(0.291667, 0.291667, 0.499999)",exact
+VS-MC-RC-028,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v2,"(288, 288, 120)","(0.833333, 0.833333, 1.5)",exact
+VS-MC-RC-028,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(306, 384, 60)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-029,T2,SIEMENS,Avanto,1.5,_T2_CISS_3D_AX,"(384, 512, 72)","(0.351562, 0.351562, 0.7)",exact
+VS-MC-RC-030,T1,SIEMENS,Prisma_fit,3,_T1_t1_vibe_fs_tra_p2_post Gad,"(288, 288, 44)","(0.625, 0.625, 1.0)",exact
+VS-MC-RC-030,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 60)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-031,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 64)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-032,T1,SIEMENS,SymphonyTim,1.5,_T1_t1_vibe_tra_recon coronal too,"(384, 512, 24)","(0.390625, 0.390625, 1.5)",exact
+VS-MC-RC-032,T2,SIEMENS,SymphonyTim,1.5,_T2_t2_ci3d_tra_iso_384 WIP,"(228, 384, 60)","(0.598958, 0.598958, 0.6)",exact
+VS-MC-RC-033,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 17)","(0.3516, 0.3516, 2.499998)",exact
+VS-MC-RC-033,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 72)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-034,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-034,T2,Philips Medical Systems,Intera,1.5,_T2_T2_3D_DRIVE AX,"(512, 512, 85)","(0.351562, 0.351562, 0.600001)",exact
+VS-MC-RC-035,T2,Philips Medical Systems,Achieva,1.5,_T2_T2_3D_DRIVE,"(336, 336, 40)","(0.386905, 0.386905, 0.7)",exact
+VS-MC-RC-036,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 15)","(0.3516, 0.3516, 2.500014)",exact
+VS-MC-RC-036,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 76)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-037,T2,SIEMENS,Avanto,1.5,_T2_t2_ci3d_tra_IAM,"(416, 512, 64)","(0.351562, 0.351562, 0.7)",exact
+VS-MC-RC-038,T2,SIEMENS,TrioTim,3,_T2_t2_spc_rst_tra_iso_384,"(384, 384, 72)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-040,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra_3mm_gad,"(256, 256, 16)","(0.625, 0.625, 3.0)",exact
+VS-MC-RC-040,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 72)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-041,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR BRAVO+C,"(256, 256, 124)","(0.9375, 0.9375, 1.199996)",exact
+VS-MC-RC-041,T2,SIEMENS,Avanto,1.5,_T2_t2_ci3d_tra_iso,"(384, 512, 64)","(0.351562, 0.351562, 0.7)",exact
+VS-MC-RC-042,T2,SIEMENS,Prisma_fit,3,_T2_t2_space_tra_iso_ZOOMit,"(320, 164, 80)","(0.5, 0.5, 0.5)",exact
+VS-MC-RC-043,T1,SIEMENS,Avanto,1.5,_T1_t1_mpr_sag_p2_iso,"(256, 256, 176)","(0.976562, 0.976562, 1.0)",exact
+VS-MC-RC-044,T1,SIEMENS,Avanto,1.5,_T1_t1_mpr_tra_p2_iso_postGd,"(192, 256, 176)","(1.0, 1.0, 1.0)",exact
+VS-MC-RC-044,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-045,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-045,T2,Philips Medical Systems,Achieva,1.5,_T2_T2 3D DRIVE COR,"(288, 288, 45)","(0.485075, 0.485075, 0.7)",exact
+VS-MC-RC-046,T1,SIEMENS,Skyra,3,_T1_t1_tse_tra_2.5mm POST GAD,"(320, 320, 16)","(0.5625, 0.5625, 3.0)",exact
+VS-MC-RC-046,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 88)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-048,T2,SIEMENS,Avanto,1.5,_T2_cor iams,"(640, 640, 55)","(0.3125, 0.3125, 1.018868)",exact
+VS-MC-RC-049,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 13)","(0.3516, 0.3516, 2.499999)",exact
+VS-MC-RC-049,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-052,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 14)","(0.3516, 0.3516, 2.499998)",exact
+VS-MC-RC-052,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 68)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-056,T2,SIEMENS,Espree,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-057,T1,SIEMENS,Symphony,1.5,_T1_t1_se_tra_3mm,"(448, 512, 11)","(0.390625, 0.390625, 3.3)",exact
+VS-MC-RC-057,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-058,T1,SIEMENS,Aera,1.5,_T1_t1_vibe_tra_fs_post,"(256, 256, 64)","(0.78125, 0.78125, 0.8)",exact
+VS-MC-RC-058,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_Ax FIESTA 3D,"(512, 512, 32)","(0.4102, 0.4102, 1.500002)",exact
+VS-MC-RC-059,T2,SIEMENS,Avanto,1.5,_T2_t2_ci3d_tra_iso,"(288, 384, 64)","(0.46875, 0.46875, 0.7)",exact
+VS-MC-RC-060,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_1mm_v4,"(512, 512, 160)","(0.410156, 0.410156, 1.0)",exact
+VS-MC-RC-060,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 72)","(0.3516, 0.3516, 0.499998)",exact
+VS-MC-RC-061,T1,SIEMENS,Skyra,3,_T1_t1_tse_cor_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-062,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-062,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.499999)",exact
+VS-MC-RC-063,T1,Philips Medical Systems,Intera,1,_T1_Brain      STEALTH 2MM,"(256, 256, 90)","(0.898438, 0.898438, 2.000002)",exact
+VS-MC-RC-063,T2,Philips Medical Systems,Intera,1.5,_T2_T2_3D_DRIVE AX,"(432, 432, 72)","(0.37037, 0.37037, 0.599997)",exact
+VS-MC-RC-065,T2,SIEMENS,Biograph_mMR,3,_T2_t2_spc_tra_iso,"(384, 384, 56)","(0.546875, 0.546875, 0.55)",exact
+VS-MC-RC-067,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 30)","(0.527344, 0.527344, 0.749999)",exact
+VS-MC-RC-070,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.499998)",exact
+VS-MC-RC-070,T2,Philips Medical Systems,Intera,1.5,_T2_T2_3D_DRIVE AX,"(480, 480, 55)","(0.416667, 0.416667, 0.600001)",exact
+VS-MC-RC-071,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 30)","(0.527344, 0.527344, 0.700002)",exact
+VS-MC-RC-072,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 88)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-073,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra_3mm_gad,"(256, 256, 16)","(0.625, 0.625, 3.0)",exact
+VS-MC-RC-073,T2,SIEMENS,Avanto,1.5,_T2_Cor IAMs,"(640, 640, 69)","(0.3125, 0.3125, 0.409091)",size_only
+VS-MC-RC-074,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 56)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-076,T1,SIEMENS,Avanto,1.5,_T1_t1_vibe_fs_tra,"(400, 512, 36)","(0.439453, 0.439453, 0.91)",exact
+VS-MC-RC-076,T2,SIEMENS,Symphony,1.5,_T2_t2_ci3d_tra,"(384, 512, 64)","(0.351562, 0.351562, 0.7)",exact
+VS-MC-RC-077,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 112)","(0.8203, 0.8203, 1.5)",exact
+VS-MC-RC-077,T2,SIEMENS,Espree,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-079,T1,GE MEDICAL SYSTEMS,SIGNA EXCITE,1.5,_T1_AX  3D  T1 FSAT +C,"(512, 512, 24)","(0.449213, 0.449214, 2.4)",exact
+VS-MC-RC-079,T2,Philips Medical Systems,Achieva,3,_T2_T2W_3D_TSE,"(512, 512, 60)","(0.292969, 0.292969, 0.75)",exact
+VS-MC-RC-080,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso_aa,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-081,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 13)","(0.3516, 0.3516, 2.499998)",exact
+VS-MC-RC-081,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-082,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-082,T2,SIEMENS,Espree,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-083,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-083,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 30)","(0.527344, 0.527344, 0.7)",exact
+VS-MC-RC-084,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-084,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-085,T1,Philips Medical Systems,Achieva,1.5,_T1_sT1W_3D_ISO,"(256, 256, 100)","(0.9375, 0.9375, 2.0)",exact
+VS-MC-RC-086,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 19)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-086,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 60)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-087,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 13)","(0.3516, 0.3516, 2.500003)",exact
+VS-MC-RC-087,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-088,T2,Philips Medical Systems,Intera,1,_T2_I.A.C.     * T2 TSE,"(256, 256, 36)","(0.527344, 0.527344, 0.700001)",exact
+VS-MC-RC-092,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 17)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-092,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 80)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-093,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_AX T1 FS 2MM +C,"(512, 512, 14)","(0.3516, 0.3516, 2.49999)",exact
+VS-MC-RC-093,T2,SIEMENS,Avanto,1.5,_T2_<MPR Range>,"(640, 640, 88)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-094,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra 512 + Gad,"(448, 512, 13)","(0.410156, 0.410156, 3.3)",exact
+VS-MC-RC-094,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_tra_p2_iso,"(640, 640, 60)","(0.296875, 0.296875, 0.7)",exact
+VS-MC-RC-095,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-095,T2,Philips Medical Systems,Achieva,1.5,_T2_T2W_3D_DRIVE,"(256, 256, 50)","(0.507812, 0.507812, 0.7)",exact
+VS-MC-RC-096,T1,SIEMENS,Avanto,1.5,_T1_t1_se_r_AXIAL_3mm,"(512, 512, 22)","(0.371094, 0.371094, 2.2)",exact
+VS-MC-RC-096,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_tra_p2_iso,"(640, 640, 80)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-097,T1,SIEMENS,Prisma_fit,3,_T1_t1_vibe_fs_tra_p2_post Gad,"(288, 288, 44)","(0.625, 0.625, 1.0)",exact
+VS-MC-RC-097,T2,Philips Medical Systems,Achieva,1.5,_T2_T2 3D DRIVE AX,"(256, 256, 40)","(0.507812, 0.507812, 0.7)",exact
+VS-MC-RC-098,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra_3mm_gad,"(512, 512, 15)","(0.371094, 0.371094, 3.3)",exact
+VS-MC-RC-098,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.499999)",exact
+VS-MC-RC-099,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-099,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_tra_p2_iso_320,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-100,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR BRAVO+C,"(256, 256, 116)","(0.9375, 0.9375, 1.200001)",exact
+VS-MC-RC-100,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-101,T1,SIEMENS,Skyra,3,_T1_t1_tse_r_tra_2mm,"(512, 512, 13)","(0.351562, 0.351562, 2.4)",exact
+VS-MC-RC-101,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 60)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-102,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-104,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.5)",exact
+VS-MC-RC-104,T2,SIEMENS,Symphony,1.5,_T2_localizer _cor,"(512, 512, 40)","(0.351562, 0.351562, 0.75)",exact
+VS-MC-RC-107,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.500003)",exact
+VS-MC-RC-111,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_1mm_v4,"(512, 512, 160)","(0.410156, 0.410156, 1.0)",exact
+VS-MC-RC-112,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_1mm_v4,"(512, 512, 160)","(0.410156, 0.410156, 1.0)",exact
+VS-MC-RC-116,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra_3mm_gad,"(256, 256, 16)","(0.625, 0.625, 3.0)",exact
+VS-MC-RC-116,T2,SIEMENS,TrioTim,3,_T2_t2_spc_rst_tra_iso_384,"(384, 384, 56)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-117,T1,SIEMENS,TrioTim,3,_T1_t1_fl3d_tra_gk_v1_3T,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-121,T2,SIEMENS,SymphonyTim,1.5,_T2_t2_spc_tra_p2_iso_320,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-122,T2,Philips Medical Systems,Intera,1.5,_T2_T2_3D_DRIVE AX,"(512, 512, 72)","(0.390625, 0.390625, 0.599998)",exact
+VS-MC-RC-126,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-132,T1,SIEMENS,Skyra,3,_T1_t1_tse_ax_2mm_gad,"(320, 320, 15)","(0.5625, 0.5625, 2.5)",exact
+VS-MC-RC-132,T2,SIEMENS,Skyra,3,_T2_t2_spc_tra_iso_0.5,"(384, 384, 60)","(0.520833, 0.520833, 0.5)",exact
+VS-MC-RC-133,T1,SIEMENS,Avanto,1.5,_T1_t1_se_tra_3mm_gad,"(256, 256, 16)","(0.625, 0.625, 3.0)",exact
+VS-MC-RC-133,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_tra_p2_iso_320,"(592, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-135,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-135,T2,Philips Medical Systems,Achieva,1.5,_T2_T2_3D_DRIVE,"(256, 256, 40)","(0.507812, 0.507812, 0.699999)",exact
+VS-MC-RC-154,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-154,T2,Philips Medical Systems,Achieva,1.5,_T2_T2W_TSE_3mm COR,"(512, 512, 40)","(0.390625, 0.390625, 3.0)",exact
+VS-MC-RC-164,T2,GE MEDICAL SYSTEMS,Signa HDxt,1.5,_T2_Ax 3D FIESTA-C,"(512, 512, 116)","(0.3516, 0.3516, 0.5)",exact
+VS-MC-RC-172,T2,GE MEDICAL SYSTEMS,Signa HDxt,1.5,_T2_Ax 3D FIESTA-C,"(512, 512, 116)","(0.3516, 0.3516, 0.500001)",exact
+VS-MC-RC-178,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 116)","(0.8203, 0.8203, 1.499996)",exact
+VS-MC-RC-178,T2,Philips Healthcare,Ingenia,3,_T2_T2W_DRIVE_HR Tra,"(480, 480, 47)","(0.291667, 0.291667, 0.5)",exact
+VS-MC-RC-188,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-188,T2,Philips Medical Systems,Achieva,3,_T2_T2W_3D_DRIVE,"(512, 512, 75)","(0.292969, 0.292969, 0.5)",exact
+VS-MC-RC-195,T1,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T1_Ax FSPGR T1 +C,"(256, 256, 112)","(0.8203, 0.8203, 1.499997)",exact
+VS-MC-RC-197,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-197,T2,SIEMENS,Skyra,3,_T2_t2_tse_tra_448_2mm rst,"(448, 448, 13)","(0.46875, 0.46875, 3.6)",exact
+VS-MC-RC-199,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 120)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-199,T2,SIEMENS,Avanto,1.5,_T2_t2_spc_rst_tra_p2_iso,"(640, 640, 72)","(0.3125, 0.3125, 0.6)",exact
+VS-MC-RC-218,T2,GE MEDICAL SYSTEMS,DISCOVERY MR450,1.5,_T2_FIESTA-C,"(512, 512, 64)","(0.3516, 0.3516, 0.600002)",exact
+VS-MC-RC-221,T1,SIEMENS,Avanto,1.5,_T1_t1_fl3d_tra_gk_v1,"(512, 512, 118)","(0.410156, 0.410156, 1.5)",exact
+VS-MC-RC-221,T2,SIEMENS,SymphonyTim,1.5,_T2_t2_spc_tra_p2_iso_320,"(640, 640, 88)","(0.3125, 0.3125, 0.6)",exact

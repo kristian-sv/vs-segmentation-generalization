@@ -1,0 +1,79 @@
+source,cohort,subset,unit,n_cases,cases_with_fp,cases_with_contralateral_fp,cases_with_near_contralateral_canal_fp_proxy,cases_with_fp_either_seed,cases_with_contralateral_fp_either_seed,n_fp_components,fp_component_ml_median,fp_component_ml_max
+posthoc (re-stacked follow-up masks),mcrc,all_22,plain_s42,22,2.0,1.0,0.0,2,1,2.0,0.05591903757572575,0.06679687499999999
+posthoc (re-stacked follow-up masks),mcrc,all_22,plain_s43,22,4.0,4.0,3.0,4,4,5.0,0.027063704368792203,0.10192822618179474
+posthoc (re-stacked follow-up masks),mcrc,all_22,slabthick_s42,22,4.0,4.0,3.0,4,4,4.0,0.02310959211871846,0.06445312912891636
+posthoc (re-stacked follow-up masks),mcrc,all_22,slabthick_s43,22,2.0,1.0,0.0,2,1,2.0,0.002929687575071206,0.0035156249999999997
+posthoc (re-stacked follow-up masks),mcrc,all_22,plain,22,3.0,2.5,1.5,6,5,3.5,0.04504120015145151,0.10192822618179474
+posthoc (re-stacked follow-up masks),mcrc,all_22,augmented,22,3.0,2.5,1.5,5,4,3.0,0.006854224762866507,0.06445312912891636
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,baseline_s42,22,9,,,,,350,,
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,baseline_s43,22,12,,,,,272,,
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,baseline_s44,22,17,,,,,255,,
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,dropout01_s42,22,9,,,,,174,,
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,dropout01_s43,22,10,,,,,108,,
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,dropout01_s44,22,15,,,,,115,,
+"cases.csv (original 7 models, stored inputs)",mcrc,all_22,nnunet_s42,22,2,,,,,2,,
+posthoc (re-stacked follow-up masks),mcrc,primary_13_slab,plain_s42,13,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),mcrc,primary_13_slab,plain_s43,13,4.0,4.0,3.0,4,4,5.0,0.027063704368792203,0.10192822618179474
+posthoc (re-stacked follow-up masks),mcrc,primary_13_slab,slabthick_s42,13,4.0,4.0,3.0,4,4,4.0,0.02310959211871846,0.06445312912891636
+posthoc (re-stacked follow-up masks),mcrc,primary_13_slab,slabthick_s43,13,1.0,1.0,0.0,1,1,1.0,0.002343750150142413,0.002343750150142413
+posthoc (re-stacked follow-up masks),mcrc,primary_13_slab,plain,13,2.0,2.0,1.5,4,4,2.5,0.027063704368792203,0.10192822618179474
+posthoc (re-stacked follow-up masks),mcrc,primary_13_slab,augmented,13,2.5,2.5,1.5,4,4,2.5,0.010192824525733014,0.06445312912891636
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,baseline_s42,13,8,,,,,349,,
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,baseline_s43,13,9,,,,,260,,
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,baseline_s44,13,11,,,,,53,,
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,dropout01_s42,13,7,,,,,167,,
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,dropout01_s43,13,8,,,,,27,,
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,dropout01_s44,13,10,,,,,48,,
+"cases.csv (original 7 models, stored inputs)",mcrc,primary_13_slab,nnunet_s42,13,0,,,,,0,,
+posthoc (re-stacked follow-up masks),mcrc,axial_whole_head,plain_s42,7,1.0,0.0,0.0,1,0,1.0,0.06679687499999999,0.06679687499999999
+posthoc (re-stacked follow-up masks),mcrc,axial_whole_head,plain_s43,7,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),mcrc,axial_whole_head,slabthick_s42,7,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),mcrc,axial_whole_head,slabthick_s43,7,1.0,0.0,0.0,1,0,1.0,0.0035156249999999997,0.0035156249999999997
+posthoc (re-stacked follow-up masks),mcrc,axial_whole_head,plain,7,0.5,0.0,0.0,1,0,0.5,0.06679687499999999,0.06679687499999999
+posthoc (re-stacked follow-up masks),mcrc,axial_whole_head,augmented,7,0.5,0.0,0.0,1,0,0.5,0.0035156249999999997,0.0035156249999999997
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,baseline_s42,7,1,,,,,1,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,baseline_s43,7,2,,,,,11,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,baseline_s44,7,4,,,,,198,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,dropout01_s42,7,2,,,,,7,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,dropout01_s43,7,2,,,,,81,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,dropout01_s44,7,4,,,,,66,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_whole_head,nnunet_s42,7,1,,,,,1,,
+posthoc (re-stacked follow-up masks),mcrc,axial_slab,plain_s42,11,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),mcrc,axial_slab,plain_s43,11,3.0,3.0,2.0,3,3,3.0,0.027063704368792203,0.08398438038010314
+posthoc (re-stacked follow-up masks),mcrc,axial_slab,slabthick_s42,11,4.0,4.0,3.0,4,4,4.0,0.02310959211871846,0.06445312912891636
+posthoc (re-stacked follow-up masks),mcrc,axial_slab,slabthick_s43,11,1.0,1.0,0.0,1,1,1.0,0.002343750150142413,0.002343750150142413
+posthoc (re-stacked follow-up masks),mcrc,axial_slab,plain,11,1.5,1.5,1.0,3,3,1.5,0.027063704368792203,0.08398438038010314
+posthoc (re-stacked follow-up masks),mcrc,axial_slab,augmented,11,2.5,2.5,1.5,4,4,2.5,0.010192824525733014,0.06445312912891636
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,baseline_s42,11,6,,,,,32,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,baseline_s43,11,7,,,,,45,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,baseline_s44,11,10,,,,,50,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,dropout01_s42,11,5,,,,,14,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,dropout01_s43,11,7,,,,,25,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,dropout01_s44,11,9,,,,,35,,
+"cases.csv (original 7 models, stored inputs)",mcrc,axial_slab,nnunet_s42,11,0,,,,,0,,
+posthoc (re-stacked follow-up masks),mcrc,non_axial,plain_s42,4,1.0,1.0,0.0,1,1,1.0,0.04504120015145151,0.04504120015145151
+posthoc (re-stacked follow-up masks),mcrc,non_axial,plain_s43,4,1.0,1.0,1.0,1,1,2.0,0.052809365461429864,0.10192822618179474
+posthoc (re-stacked follow-up masks),mcrc,non_axial,slabthick_s42,4,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),mcrc,non_axial,slabthick_s43,4,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),mcrc,non_axial,plain,4,1.0,1.0,0.5,2,2,1.5,0.04504120015145151,0.10192822618179474
+posthoc (re-stacked follow-up masks),mcrc,non_axial,augmented,4,0.0,0.0,0.0,0,0,0.0,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,baseline_s42,4,2,,,,,317,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,baseline_s43,4,3,,,,,216,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,baseline_s44,4,3,,,,,7,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,dropout01_s42,4,2,,,,,153,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,dropout01_s43,4,1,,,,,2,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,dropout01_s44,4,2,,,,,14,,
+"cases.csv (original 7 models, stored inputs)",mcrc,non_axial,nnunet_s42,4,1,,,,,1,,
+posthoc (re-stacked follow-up masks),validation,validation_24,plain_s42,24,0.0,0.0,0.0,0,0,0.0,,
+posthoc (re-stacked follow-up masks),validation,validation_24,plain_s43,24,1.0,1.0,1.0,1,1,1.0,0.3126520156860352,0.3126520156860352
+posthoc (re-stacked follow-up masks),validation,validation_24,slabthick_s42,24,1.0,1.0,0.0,1,1,1.0,0.006560897827148438,0.006560897827148438
+posthoc (re-stacked follow-up masks),validation,validation_24,slabthick_s43,24,4.0,1.0,0.0,4,1,4.0,0.0006308555603027344,0.25436096191406254
+posthoc (re-stacked follow-up masks),validation,validation_24,plain,24,0.5,0.5,0.5,1,1,0.5,0.3126520156860352,0.3126520156860352
+posthoc (re-stacked follow-up masks),validation,validation_24,augmented,24,2.5,1.0,0.0,5,2,2.5,0.0007570266723632813,0.25436096191406254
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,baseline_s42,24,1,,,,,2,,
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,baseline_s43,24,7,,,,,13,,
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,baseline_s44,24,7,,,,,7,,
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,dropout01_s42,24,1,,,,,2,,
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,dropout01_s43,24,3,,,,,6,,
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,dropout01_s44,24,2,,,,,2,,
+"cases.csv (original 7 models, stored inputs)",validation,validation_24,nnunet_s42,24,0,,,,,0,,

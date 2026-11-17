@@ -1,0 +1,45 @@
+{
+  "synthetic_test_groups": 5,
+  "scorer_sha256": "eb9465092129fd7a71b0f566b9efe2baa1d1d6c342659385e66fb1d24f8a5281",
+  "checks_sha256": "3e5b105a383aca58d366d1312d7195e3e85b498165c99d6da45cadf3c757791e",
+  "versions": {
+    "torch": "2.8.0a0+5228986c39.nv25.6",
+    "monai": "1.5.2",
+    "numpy": "1.26.4",
+    "nibabel": "5.4.2",
+    "scipy": "1.15.3"
+  },
+  "manual_cli_smoke": {
+    "case_id": "VS-SEG-002",
+    "shape": [
+      512,
+      512,
+      120
+    ],
+    "device": "cuda",
+    "command": [
+      "/usr/bin/python",
+      "/cluster/projects/nn11127k/ksv023/thesis/experiments/t1_scoring_mvp/scoring.py",
+      "manual-export",
+      "--manifest",
+      "/cluster/projects/nn11127k/ksv023/thesis/experiments/t1_scoring_mvp/work/checks_2186086/one_val.csv",
+      "--manual",
+      "baseline",
+      "--seed",
+      "42",
+      "--checkpoint",
+      "/cluster/projects/nn11127k/ksv023/thesis/experiments/t1_scoring_mvp/work/checks_2186086/UNTRAINED_DIAGNOSTIC_ONLY.pt",
+      "--device",
+      "cuda",
+      "--output",
+      "/cluster/projects/nn11127k/ksv023/thesis/experiments/t1_scoring_mvp/work/checks_2186086/untrained_export_DO_NOT_SCORE"
+    ],
+    "checkpoint_sha256": "4cfadda3fe5d431b79aba74578bdfd5c4614b36cc43070712b1e663fd0f87646",
+    "diagnostic": "initialized weights; no model score",
+    "exported_grid_verified": true
+  },
+  "development_pairs_checked": 217,
+  "full_evidence_path": "experiments/t1_scoring_mvp/work/checks_2186086.json",
+  "full_evidence_sha256": "33f5c138be23fae04fd481d567d9da963079365c642415706a0779685426743a",
+  "job_id": 2186086
+}

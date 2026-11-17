@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "diagnostic_only": true,
+  "training_updates": 3,
+  "fold": 0,
+  "training_patients": 193,
+  "validation_patients": 24,
+  "patch_size": [
+    48,
+    224,
+    192
+  ],
+  "batch_size": 2,
+  "update_seconds": [
+    27.13575203799701,
+    0.5140810159937246,
+    0.3800076920015272
+  ],
+  "validation_batch_seconds": 8.639011906008818,
+  "peak_gpu_allocated_gib": 5.009353160858154,
+  "compiled": true,
+  "saved_model": false,
+  "test_scores": false,
+  "numpy_version": "1.26.4",
+  "gpu": "NVIDIA GH200 120GB"
+}

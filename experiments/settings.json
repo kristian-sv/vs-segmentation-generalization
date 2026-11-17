@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "patch_size": [
+      192,
+      192,
+      64
+    ],
+    "pixdim": [
+      1,
+      1,
+      1.0
+    ],
+    "batch_size": 1,
+    "lr": 0.001,
+    "epochs": 300,
+    "patience": 75,
+    "num_workers": 4,
+    "sw_batch_size": 8,
+    "channels": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "num_samples": 4,
+    "warmup_epochs": 10,
+    "weight_decay": 1e-05,
+    "dropout": 0.2,
+    "pos_neg_ratio": 3,
+    "sw_overlap": 0.25
+  },
+  "lower_dropout": 0.1
+}

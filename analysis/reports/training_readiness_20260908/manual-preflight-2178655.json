@@ -1,0 +1,17 @@
+{
+  "kind": "manual",
+  "machine": "aarch64",
+  "gpu": "NVIDIA GH200 120GB",
+  "gpu_memory_gib": 95.0,
+  "versions": {
+    "torch": "2.8.0a0+5228986c39.nv25.6",
+    "numpy": "1.26.4",
+    "nibabel": "5.4.2",
+    "scipy": "1.15.3",
+    "monai": "1.5.2",
+    "wandb": "0.25.1"
+  },
+  "cuda": "12.9",
+  "gpu_forward_backward": "passed",
+  "compiled": false
+}

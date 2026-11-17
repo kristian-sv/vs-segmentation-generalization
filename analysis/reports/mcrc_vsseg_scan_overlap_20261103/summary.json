@@ -1,0 +1,78 @@
+{
+  "byte_identical_mcrc_slices_in_vsseg": 0,
+  "central_voxels_equal_range_t1": [
+    0.985925038655599,
+    1.0
+  ],
+  "cohort_patients": 51,
+  "date_offset_days_range": [
+    0,
+    341
+  ],
+  "frame_of_reference_id_mismatches": [],
+  "input_sha256": {
+    "analysis/reports/trustworthy_testing_20260907/cohort_decisions.csv": "eaed934b992e94bb5fc18f1463cef95b48c71728bd3d9c871c809cc0c4afd08f",
+    "data/raw/datasets/DirectoryNamesMappingModality.csv": "81068588029b8d5b1bc623a227c94ee4eff660cef4eb4a574297c2a172a18a62",
+    "data/raw/datasets/VS-MC-RC-Segmentations_with_pathname_spreadsheet-Release2023/Vestibular-Schwannoma-MC-RC_NIfTI-segmentation-info3.csv": "f9d8d2b2ecab74824d02c95fdccd42f60c82f5e17746b830e3c67f73f9a372eb",
+    "data/raw/datasets/series_overlap.csv": "a47ec7b1e85ee8b69d288d7de6d2226d41a50ad2670946e18ae238677f9fd185",
+    "data/splits/vsseg_baseline.csv": "b12635ecf8992d14fc7636ae46baa8d5000111c4784ffc371fe4144bd0fc659e",
+    "metadata/vs_mcrc_master.csv": "8795c787117e9b93fd7e3c38cc43b641105930dbbf7a0006216fa6b10130102f"
+  },
+  "local_mcrc_series": 354,
+  "other_scan_same_acquisition": [
+    "VS-SEG-092",
+    "VS-SEG-135",
+    "VS-SEG-154",
+    "VS-SEG-178"
+  ],
+  "patient_groups": {
+    "no_local_same_acquisition": {
+      "total": 14,
+      "train": 11,
+      "val": 3
+    },
+    "other_local_scan_same_acquisition": {
+      "total": 4,
+      "train": 4
+    },
+    "selected_scan_same_acquisition": {
+      "total": 11,
+      "train": 10,
+      "val": 1
+    }
+  },
+  "patients_outside_cohort_with_same_acquisition": [
+    "VS-SEG-133",
+    "VS-SEG-172"
+  ],
+  "published_vsseg_prefixed_patients": 58,
+  "retained_patients": 22,
+  "retained_patients_sharing_frame_of_reference": [],
+  "same_acquisition_pairs": 17,
+  "same_acquisition_t1_pairs_in_cohort": 15,
+  "selected_same_acquisition": [
+    "VS-SEG-045",
+    "VS-SEG-060",
+    "VS-SEG-095",
+    "VS-SEG-111",
+    "VS-SEG-112",
+    "VS-SEG-117",
+    "VS-SEG-126",
+    "VS-SEG-188",
+    "VS-SEG-197",
+    "VS-SEG-199",
+    "VS-SEG-221"
+  ],
+  "series_overlap_csv_rows": 8,
+  "series_overlap_csv_rows_confirmed": 8,
+  "shared_by_split": {
+    "train": 25,
+    "val": 4
+  },
+  "vsseg_image_series": 484,
+  "zero_only_in_mcrc_range_t1": [
+    0.17642821460977853,
+    0.2708003625603605
+  ],
+  "zero_only_in_vsseg_max": 0.0
+}

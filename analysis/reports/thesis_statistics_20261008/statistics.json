@@ -1,0 +1,876 @@
+{
+  "bootstrap": {
+    "method": "patient percentile bootstrap",
+    "seed": 42,
+    "replicates": 10000,
+    "shared_indices_across_runs": true,
+    "confidence": 0.95,
+    "scope": "Conditional on fitted models and evaluated cohort; not training or site uncertainty."
+  },
+  "cohorts": {
+    "validation": {
+      "runs": {
+        "baseline_s42": {
+          "n": 24,
+          "mean_dice": 0.918269381967948,
+          "median_dice": 0.9335265682723819,
+          "patient_sd": 0.04906674997006834,
+          "mean_dice_ci95": [
+            0.8971090881570719,
+            0.9353512793569744
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.05904808044433596,
+          "median_absolute_relative_volume_error_percent": 5.089823941880249
+        },
+        "baseline_s43": {
+          "n": 24,
+          "mean_dice": 0.9189595819578681,
+          "median_dice": 0.9268534491016611,
+          "patient_sd": 0.03992391490161557,
+          "mean_dice_ci95": [
+            0.9019694948325665,
+            0.9336226120624472
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.055515289306640625,
+          "median_absolute_relative_volume_error_percent": 3.907975338711714
+        },
+        "baseline_s44": {
+          "n": 24,
+          "mean_dice": 0.9173193320307451,
+          "median_dice": 0.9325731602370615,
+          "patient_sd": 0.045003036035535404,
+          "mean_dice_ci95": [
+            0.8981404485899975,
+            0.9337402758366365
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.05892190933227537,
+          "median_absolute_relative_volume_error_percent": 5.621435363902958
+        },
+        "dropout01_s42": {
+          "n": 24,
+          "mean_dice": 0.9204881283879564,
+          "median_dice": 0.9289828963573517,
+          "patient_sd": 0.042381543748132695,
+          "mean_dice_ci95": [
+            0.9024694843726936,
+            0.9361443951260483
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.06005744934082036,
+          "median_absolute_relative_volume_error_percent": 4.8141022328958485
+        },
+        "dropout01_s43": {
+          "n": 24,
+          "mean_dice": 0.919889205383169,
+          "median_dice": 0.9287089704984436,
+          "patient_sd": 0.04686583884218789,
+          "mean_dice_ci95": [
+            0.8997143932465015,
+            0.9362540719188474
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.06523046493530271,
+          "median_absolute_relative_volume_error_percent": 3.485097543288827
+        },
+        "dropout01_s44": {
+          "n": 24,
+          "mean_dice": 0.9202544866598347,
+          "median_dice": 0.9293039143632407,
+          "patient_sd": 0.045260503237284054,
+          "mean_dice_ci95": [
+            0.900903621832418,
+            0.9363708265160758
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.09248342514038083,
+          "median_absolute_relative_volume_error_percent": 4.198319218986802
+        },
+        "nnunet_s42": {
+          "n": 24,
+          "mean_dice": 0.9323443644400453,
+          "median_dice": 0.9458028929378282,
+          "patient_sd": 0.0770038852078918,
+          "mean_dice_ci95": [
+            0.897369587841649,
+            0.9544488398941439
+          ],
+          "dice_below_0_1": 0,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.04441223144531248,
+          "median_absolute_relative_volume_error_percent": 3.18306908488986
+        }
+      },
+      "reference_volume_ml": {
+        "median": 1.2151539802551272,
+        "min": 0.14282569885253907,
+        "max": 10.782583236694338
+      }
+    },
+    "mcrc": {
+      "runs": {
+        "baseline_s42": {
+          "n": 22,
+          "mean_dice": 0.41276371395348993,
+          "median_dice": 0.2665362134483106,
+          "patient_sd": 0.3970595585590831,
+          "mean_dice_ci95": [
+            0.2508422088547144,
+            0.57381724955224
+          ],
+          "dice_below_0_1": 8,
+          "empty_predictions": 2,
+          "median_absolute_volume_error_ml": 0.75865908338279,
+          "median_absolute_relative_volume_error_percent": 85.2012545930865
+        },
+        "baseline_s43": {
+          "n": 22,
+          "mean_dice": 0.4388544545420153,
+          "median_dice": 0.2289683329179874,
+          "patient_sd": 0.3969887555615177,
+          "mean_dice_ci95": [
+            0.27780068782779516,
+            0.5985988967661547
+          ],
+          "dice_below_0_1": 6,
+          "empty_predictions": 2,
+          "median_absolute_volume_error_ml": 0.5886852507663274,
+          "median_absolute_relative_volume_error_percent": 75.77925063497719
+        },
+        "baseline_s44": {
+          "n": 22,
+          "mean_dice": 0.4419034445544426,
+          "median_dice": 0.4533730795816373,
+          "patient_sd": 0.38099666974064966,
+          "mean_dice_ci95": [
+            0.2883969353875402,
+            0.5927896501351407
+          ],
+          "dice_below_0_1": 7,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.6343189911925623,
+          "median_absolute_relative_volume_error_percent": 43.30865883011125
+        },
+        "dropout01_s42": {
+          "n": 22,
+          "mean_dice": 0.43700387271068003,
+          "median_dice": 0.30425281762983775,
+          "patient_sd": 0.4039859969880721,
+          "mean_dice_ci95": [
+            0.2729427343716157,
+            0.597291254882202
+          ],
+          "dice_below_0_1": 8,
+          "empty_predictions": 3,
+          "median_absolute_volume_error_ml": 0.592961843376833,
+          "median_absolute_relative_volume_error_percent": 59.95288909070269
+        },
+        "dropout01_s43": {
+          "n": 22,
+          "mean_dice": 0.3671544782849582,
+          "median_dice": 0.03762771159376118,
+          "patient_sd": 0.40899962660684774,
+          "mean_dice_ci95": [
+            0.20545212049526332,
+            0.5364921407928387
+          ],
+          "dice_below_0_1": 12,
+          "empty_predictions": 4,
+          "median_absolute_volume_error_ml": 0.675709125330034,
+          "median_absolute_relative_volume_error_percent": 93.92679196621285
+        },
+        "dropout01_s44": {
+          "n": 22,
+          "mean_dice": 0.45073102712228424,
+          "median_dice": 0.37568551022685603,
+          "patient_sd": 0.3758368405925115,
+          "mean_dice_ci95": [
+            0.2989449277668402,
+            0.6014633643744018
+          ],
+          "dice_below_0_1": 6,
+          "empty_predictions": 0,
+          "median_absolute_volume_error_ml": 0.5092352006941683,
+          "median_absolute_relative_volume_error_percent": 46.47746628319325
+        },
+        "nnunet_s42": {
+          "n": 22,
+          "mean_dice": 0.48268274038281817,
+          "median_dice": 0.6788834028136861,
+          "patient_sd": 0.4230318947347887,
+          "mean_dice_ci95": [
+            0.30994578587167865,
+            0.6509342035639581
+          ],
+          "dice_below_0_1": 9,
+          "empty_predictions": 7,
+          "median_absolute_volume_error_ml": 0.7388213991941995,
+          "median_absolute_relative_volume_error_percent": 47.97576596432157
+        }
+      },
+      "reference_volume_ml": {
+        "median": 1.4661347135665024,
+        "min": 0.030402735223307095,
+        "max": 27.09821805691563
+      }
+    }
+  },
+  "patient_patterns": {
+    "all_runs_below_0_1": [
+      "VS-MC-RC-016",
+      "VS-MC-RC-026"
+    ],
+    "any_run_below_0_1": 14,
+    "low_dice_patient_run_pairs": 56,
+    "empty_low_dice_pairs": 18,
+    "small_nonempty_low_dice_pairs": 32,
+    "nnunet_empty_cases": [
+      "VS-MC-RC-009",
+      "VS-MC-RC-016",
+      "VS-MC-RC-026",
+      "VS-MC-RC-076",
+      "VS-MC-RC-081",
+      "VS-MC-RC-098",
+      "VS-MC-RC-100"
+    ]
+  },
+  "patients": [
+    {
+      "case_id": "VS-MC-RC-009",
+      "reference_ml": 1.4926211014756556,
+      "dice": {
+        "baseline_s42": 0.25016202203499677,
+        "baseline_s43": 0.23552735923869944,
+        "baseline_s44": 0.010765842916564718,
+        "dropout01_s42": 0.1483503981797497,
+        "dropout01_s43": 0.6131313131313131,
+        "dropout01_s44": 0.33620689655172414,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.22058075290837856,
+        "baseline_s43": 0.3741730556885415,
+        "baseline_s44": 0.019985504458141682,
+        "dropout01_s42": 0.13397690025643127,
+        "dropout01_s43": 0.7057843889199293,
+        "dropout01_s44": 0.3105155229700161,
+        "nnunet_s42": 0.0
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-012",
+      "reference_ml": 14.776668712020749,
+      "dice": {
+        "baseline_s42": 0.0007203745947892904,
+        "baseline_s43": 0.0021230236326051735,
+        "baseline_s44": 0.0,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.0004134794293983874,
+        "nnunet_s42": 0.5996814825539308
+      },
+      "prediction_ml": {
+        "baseline_s42": 2.189815117924222,
+        "baseline_s43": 3.4537967743632723,
+        "baseline_s44": 0.008148149275997104,
+        "dropout01_s42": 0.5581482254058017,
+        "dropout01_s43": 0.004074074637998552,
+        "dropout01_s44": 0.003055555978498914,
+        "nnunet_s42": 6.328056431471251
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-016",
+      "reference_ml": 0.030402735223307095,
+      "dice": {
+        "baseline_s42": 0.0,
+        "baseline_s43": 0.0,
+        "baseline_s44": 0.0,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.0,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.0,
+        "baseline_s43": 0.0,
+        "baseline_s44": 0.017222358681410956,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.0014059068311355883,
+        "nnunet_s42": 0.0
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-021",
+      "reference_ml": 1.9652343749999999,
+      "dice": {
+        "baseline_s42": 0.8792508624938393,
+        "baseline_s43": 0.8988872762457668,
+        "baseline_s44": 0.6052814454482279,
+        "dropout01_s42": 0.8896451142440447,
+        "dropout01_s43": 0.783273381294964,
+        "dropout01_s44": 0.7636363636363637,
+        "nnunet_s42": 0.882804995196926
+      },
+      "prediction_ml": {
+        "baseline_s42": 1.6013671874999997,
+        "baseline_s43": 1.6681640624999998,
+        "baseline_s44": 3.0937499999999996,
+        "dropout01_s42": 1.6505859374999998,
+        "dropout01_s43": 1.9441406249999997,
+        "dropout01_s44": 2.1919921875,
+        "nnunet_s42": 1.6945312499999998
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-024",
+      "reference_ml": 27.09821805691563,
+      "dice": {
+        "baseline_s42": 0.15894171474040183,
+        "baseline_s43": 0.10577689243027888,
+        "baseline_s44": 0.24829271348912976,
+        "dropout01_s42": 0.04875618349407452,
+        "dropout01_s43": 0.025125975012079797,
+        "dropout01_s44": 0.04604090941486708,
+        "nnunet_s42": 0.7580853230734412
+      },
+      "prediction_ml": {
+        "baseline_s42": 2.7250488566321054,
+        "baseline_s43": 2.683520535885172,
+        "baseline_s44": 4.465283249836933,
+        "dropout01_s42": 0.6852172923244009,
+        "dropout01_s43": 1.5503906412188464,
+        "dropout01_s44": 0.6486328192854358,
+        "nnunet_s42": 16.590564138399888
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-026",
+      "reference_ml": 0.855778431661434,
+      "dice": {
+        "baseline_s42": 0.0,
+        "baseline_s43": 0.0,
+        "baseline_s44": 0.0,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.0,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.032450969781311144,
+        "baseline_s43": 0.05748457504117974,
+        "baseline_s44": 0.48552831929942675,
+        "dropout01_s42": 0.008653591941682972,
+        "dropout01_s43": 0.002472454840480849,
+        "dropout01_s44": 0.09982536418441429,
+        "nnunet_s42": 0.0
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-028",
+      "reference_ml": 7.181249657571319,
+      "dice": {
+        "baseline_s42": 0.8983428935627789,
+        "baseline_s43": 0.9046299960427384,
+        "baseline_s44": 0.8955938697318008,
+        "dropout01_s42": 0.904467680608365,
+        "dropout01_s43": 0.911179293525293,
+        "dropout01_s44": 0.9010814249363868,
+        "nnunet_s42": 0.9265002325942007
+      },
+      "prediction_ml": {
+        "baseline_s42": 5.893749718964103,
+        "baseline_s43": 5.980208048174782,
+        "baseline_s44": 5.868749720156195,
+        "dropout01_s42": 5.968749715387824,
+        "dropout01_s43": 6.0593747110664875,
+        "dropout01_s44": 5.91874971777201,
+        "nnunet_s42": 6.254166368444764
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-030",
+      "reference_ml": 1.1132813213176462,
+      "dice": {
+        "baseline_s42": 0.001402524544179523,
+        "baseline_s43": 0.005471956224350205,
+        "baseline_s44": 0.30146471371504663,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.027646662171274445,
+        "dropout01_s44": 0.1075619295958279,
+        "nnunet_s42": 0.45604544225047333
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.0007812500500474711,
+        "baseline_s43": 0.02890625185175643,
+        "baseline_s44": 0.3535156476464807,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.04531250290275332,
+        "dropout01_s44": 0.08515625545517434,
+        "nnunet_s42": 0.330859396195104
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-043",
+      "reference_ml": 0.22125244140625,
+      "dice": {
+        "baseline_s42": 0.7726269315673289,
+        "baseline_s43": 0.7937915742793792,
+        "baseline_s44": 0.8344370860927153,
+        "dropout01_s42": 0.7958762886597938,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.7081081081081081,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.21076202392578125,
+        "baseline_s43": 0.20885467529296875,
+        "baseline_s44": 0.21076202392578125,
+        "dropout01_s42": 0.24127960205078125,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.1316070556640625,
+        "nnunet_s42": 1.6565322875976562
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-044",
+      "reference_ml": 0.3919999676374693,
+      "dice": {
+        "baseline_s42": 0.9073569482288828,
+        "baseline_s43": 0.9163346613545816,
+        "baseline_s44": 0.7131428571428572,
+        "dropout01_s42": 0.9137466307277629,
+        "dropout01_s43": 0.8513708513708513,
+        "dropout01_s44": 0.9041095890410958,
+        "nnunet_s42": 0.8365650969529086
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.34199997176534314,
+        "baseline_s43": 0.36099997019675106,
+        "baseline_s44": 0.48299996012473895,
+        "dropout01_s42": 0.3499999711048833,
+        "dropout01_s43": 0.30099997515019966,
+        "dropout01_s44": 0.33799997209557303,
+        "nnunet_s42": 0.3299999727560328
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-045",
+      "reference_ml": 2.202553673960291,
+      "dice": {
+        "baseline_s42": 0.7079943899018233,
+        "baseline_s43": 0.8532110091743119,
+        "baseline_s44": 0.7879867650801731,
+        "dropout01_s42": 0.7342676559494367,
+        "dropout01_s43": 0.8171823063155204,
+        "dropout01_s44": 0.8782181774637768,
+        "nnunet_s42": 0.8773080660835763
+      },
+      "prediction_ml": {
+        "baseline_s42": 1.2143757636674017,
+        "baseline_s43": 1.662937608494824,
+        "baseline_s44": 1.5632571985331745,
+        "dropout01_s42": 1.2853022092170368,
+        "dropout01_s43": 1.546004819885966,
+        "dropout01_s44": 1.7995189394518916,
+        "nnunet_s42": 1.7424902433680634
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-057",
+      "reference_ml": 0.655080406429058,
+      "dice": {
+        "baseline_s42": 0.0,
+        "baseline_s43": 0.0,
+        "baseline_s44": 0.0,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.07789358200767965,
+        "nnunet_s42": 0.859073359073359
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.02498187990619289,
+        "baseline_s43": 0.12213363509694301,
+        "baseline_s44": 1.2163399749881916,
+        "dropout01_s42": 0.04663284249156006,
+        "dropout01_s43": 0.004441223094434291,
+        "dropout01_s44": 0.35696330621515615,
+        "nnunet_s42": 0.4951963750294235
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-060",
+      "reference_ml": 12.603544861734392,
+      "dice": {
+        "baseline_s42": 0.14714361986118527,
+        "baseline_s43": 0.16982722292456806,
+        "baseline_s44": 0.14682327816337426,
+        "dropout01_s42": 0.15980064683738932,
+        "dropout01_s43": 0.04584365848164001,
+        "dropout01_s44": 0.15786400552046287,
+        "nnunet_s42": 0.013511192534493616
+      },
+      "prediction_ml": {
+        "baseline_s42": 1.0032564098250731,
+        "baseline_s43": 1.1877800362519875,
+        "baseline_s44": 1.0032564098250731,
+        "dropout01_s42": 1.098424106919269,
+        "dropout01_s43": 0.29567368486517365,
+        "dropout01_s44": 1.0824417455752056,
+        "nnunet_s42": 0.08572357448179481
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-063",
+      "reference_ml": 7.768412576694075,
+      "dice": {
+        "baseline_s42": 0.8362671810947673,
+        "baseline_s43": 0.8222113979542134,
+        "baseline_s44": 0.8609770453207769,
+        "dropout01_s42": 0.8666510428872745,
+        "dropout01_s43": 0.8641188959660298,
+        "dropout01_s44": 0.8742863800535943,
+        "nnunet_s42": 0.8985540248206763
+      },
+      "prediction_ml": {
+        "baseline_s42": 5.6212827498023215,
+        "baseline_s43": 5.488903316866138,
+        "baseline_s44": 5.945773798828819,
+        "dropout01_s42": 6.008734748639931,
+        "dropout01_s43": 5.918329282244489,
+        "dropout01_s44": 6.087839531735943,
+        "nnunet_s42": 6.410716197433951
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-076",
+      "reference_ml": 0.6952208732658569,
+      "dice": {
+        "baseline_s42": 0.0010093363613424174,
+        "baseline_s43": 0.1508288582769087,
+        "baseline_s44": 0.18820861678004536,
+        "dropout01_s42": 0.337624584717608,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.16281179138321997,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.0012301683803996456,
+        "baseline_s43": 0.05746643719866916,
+        "baseline_s44": 0.07978520638591988,
+        "dropout01_s42": 0.15113497244909932,
+        "dropout01_s43": 0.00035147668011418446,
+        "dropout01_s44": 0.07978520638591988,
+        "nnunet_s42": 0.0
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-081",
+      "reference_ml": 0.3912302349770847,
+      "dice": {
+        "baseline_s42": 0.0,
+        "baseline_s43": 0.21637426900584794,
+        "baseline_s44": 0.0,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.029411764705882353,
+        "dropout01_s44": 0.032397408207343416,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.0,
+        "baseline_s43": 0.04962887659511618,
+        "baseline_s44": 0.005478512351408929,
+        "dropout01_s42": 0.0,
+        "dropout01_s43": 0.025136703729993912,
+        "dropout01_s44": 0.20560534589405277,
+        "nnunet_s42": 0.0
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-082",
+      "reference_ml": 2.2425653457641603,
+      "dice": {
+        "baseline_s42": 0.8448520862937605,
+        "baseline_s43": 0.8583941605839416,
+        "baseline_s44": 0.8287958115183246,
+        "dropout01_s42": 0.8996455201075663,
+        "dropout01_s43": 0.8556852241566226,
+        "dropout01_s44": 0.774616820315593,
+        "nnunet_s42": 0.910367566247405
+      },
+      "prediction_ml": {
+        "baseline_s42": 1.6641969680786135,
+        "baseline_s43": 1.733086395263672,
+        "baseline_s44": 1.6132238388061524,
+        "dropout01_s42": 1.886258125305176,
+        "dropout01_s43": 1.714413070678711,
+        "dropout01_s44": 2.219097518920899,
+        "nnunet_s42": 1.8902956008911134
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-085",
+      "reference_ml": 2.837109375,
+      "dice": {
+        "baseline_s42": 0.9093915343915344,
+        "baseline_s43": 0.8817672682016179,
+        "baseline_s44": 0.8335779277957147,
+        "dropout01_s42": 0.9026017344896597,
+        "dropout01_s43": 0.867418469978665,
+        "dropout01_s44": 0.8430601753855458,
+        "nnunet_s42": 0.9094553959238223
+      },
+      "prediction_ml": {
+        "baseline_s42": 2.4785156249999996,
+        "baseline_s43": 2.8124999999999996,
+        "baseline_s44": 3.1517578124999996,
+        "dropout01_s42": 2.4328125,
+        "dropout01_s43": 2.9302734375,
+        "dropout01_s44": 2.9759765624999996,
+        "nnunet_s42": 2.4240234375
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-097",
+      "reference_ml": 4.364453598950032,
+      "dice": {
+        "baseline_s42": 0.004286862552469411,
+        "baseline_s43": 0.0,
+        "baseline_s44": 0.7453193683182286,
+        "dropout01_s42": 0.07511413558446033,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.21779336734693877,
+        "nnunet_s42": 0.8079573123348702
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.009375001018061466,
+        "baseline_s43": 0.0,
+        "baseline_s44": 2.833594057709078,
+        "dropout01_s42": 0.1703125184947833,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.5355469331567613,
+        "nnunet_s42": 3.175781594868322
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-098",
+      "reference_ml": 0.2026824158945601,
+      "dice": {
+        "baseline_s42": 0.60625,
+        "baseline_s43": 0.7383309759547383,
+        "baseline_s44": 0.8370273794002607,
+        "dropout01_s42": 0.784741144414169,
+        "dropout01_s43": 0.5058626465661642,
+        "dropout01_s44": 0.8505154639175257,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.08816230646534677,
+        "baseline_s43": 0.11861011333739951,
+        "baseline_s44": 0.14587680605864078,
+        "dropout01_s42": 0.1308801250619581,
+        "dropout01_s43": 0.06862117668179052,
+        "dropout01_s44": 0.14996680996682696,
+        "nnunet_s42": 0.0
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-099",
+      "reference_ml": 0.5826581954956055,
+      "dice": {
+        "baseline_s42": 0.8718920198910727,
+        "baseline_s43": 0.8789007918025151,
+        "baseline_s44": 0.8725305738476011,
+        "dropout01_s42": 0.8819153881915388,
+        "dropout01_s43": 0.8801480795927811,
+        "dropout01_s44": 0.8643026004728133,
+        "nnunet_s42": 0.8831107987819161
+      },
+      "prediction_ml": {
+        "baseline_s42": 0.48298301696777346,
+        "baseline_s43": 0.5008993148803711,
+        "baseline_s44": 0.4903009414672852,
+        "dropout01_s42": 0.5029180526733399,
+        "dropout01_s43": 0.5079648971557618,
+        "dropout01_s44": 0.4847494125366211,
+        "nnunet_s42": 0.4945907592773438
+      }
+    },
+    {
+      "case_id": "VS-MC-RC-100",
+      "reference_ml": 1.4396483256573491,
+      "dice": {
+        "baseline_s42": 0.2829104048616244,
+        "baseline_s43": 0.22240930659727537,
+        "baseline_s44": 0.011650485436893204,
+        "dropout01_s42": 0.2708810505420675,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.415164123901988,
+        "nnunet_s42": 0.0
+      },
+      "prediction_ml": {
+        "baseline_s42": 2.8402827440520113,
+        "baseline_s43": 3.152745478795513,
+        "baseline_s44": 0.00843543940814853,
+        "dropout01_s42": 0.862172202841181,
+        "dropout01_s43": 0.0,
+        "dropout01_s44": 0.46096161599111657,
+        "nnunet_s42": 0.0
+      }
+    }
+  ],
+  "scanner_groups": {
+    "GE_1.5T": {
+      "n": 2,
+      "manual_six_run_mean": 0.023181953493256146,
+      "nnunet_mean": 0.0
+    },
+    "Philips_Achieva_1.5T": {
+      "n": 3,
+      "manual_six_run_mean": 0.5589471350701519,
+      "nnunet_mean": 0.7973139578915598
+    },
+    "Philips_Intera_1T": {
+      "n": 1,
+      "manual_six_run_mean": 0.8540853238794427,
+      "nnunet_mean": 0.8985540248206763
+    },
+    "Siemens_3.0T": {
+      "n": 4,
+      "manual_six_run_mean": 0.12276243085092615,
+      "nnunet_mean": 0.5088998175483196
+    },
+    "Siemens_Avanto_1.5T": {
+      "n": 11,
+      "manual_six_run_mean": 0.49812332340799104,
+      "nnunet_mean": 0.4014197321499809
+    },
+    "Siemens_other_1.5T": {
+      "n": 1,
+      "manual_six_run_mean": 0.7964767173141737,
+      "nnunet_mean": 0.8773080660835763
+    }
+  },
+  "volume_subgroups": {
+    "below_median": {
+      "n": 11,
+      "manual_six_run_mean": 0.3261582115100143,
+      "nnunet_mean": 0.27589042700533245
+    },
+    "at_or_above_median": {
+      "n": 11,
+      "manual_six_run_mean": 0.5233121188792758,
+      "nnunet_mean": 0.6894750537603038
+    }
+  },
+  "cross_validation": {
+    "folds": [
+      {
+        "dataset": "Dataset902_T1VSCVFold0",
+        "n": 44,
+        "mean": 0.9152403669741901,
+        "min": 0.0,
+        "below_0_1": 1
+      },
+      {
+        "dataset": "Dataset903_T1VSCVFold1",
+        "n": 44,
+        "mean": 0.9095327591171203,
+        "min": 0.0,
+        "below_0_1": 1
+      },
+      {
+        "dataset": "Dataset904_T1VSCVFold2",
+        "n": 43,
+        "mean": 0.9414989074874488,
+        "min": 0.7168168927077191,
+        "below_0_1": 0
+      },
+      {
+        "dataset": "Dataset905_T1VSCVFold3",
+        "n": 43,
+        "mean": 0.943134982866979,
+        "min": 0.8004722550177096,
+        "below_0_1": 0
+      },
+      {
+        "dataset": "Dataset906_T1VSCVFold4",
+        "n": 43,
+        "mean": 0.9333385040962164,
+        "min": 0.7495395948434622,
+        "below_0_1": 0
+      }
+    ],
+    "n": 217,
+    "mean": 0.928400140596292,
+    "median": 0.9524244599621484,
+    "patient_sd": 0.10674846060695442,
+    "lowest_five": [
+      {
+        "case_id": "VS-SEG-008",
+        "Dice": 0.0,
+        "FN": 3995,
+        "FP": 0,
+        "IoU": 0.0,
+        "TN": 31453285,
+        "TP": 0,
+        "n_pred": 0,
+        "n_ref": 3995
+      },
+      {
+        "case_id": "VS-SEG-131",
+        "Dice": 0.0,
+        "FN": 5597,
+        "FP": 0,
+        "IoU": 0.0,
+        "TN": 31451683,
+        "TP": 0,
+        "n_pred": 0,
+        "n_ref": 5597
+      },
+      {
+        "case_id": "VS-SEG-122",
+        "Dice": 0.44407108239095316,
+        "FN": 77,
+        "FP": 8526,
+        "IoU": 0.28540576459838857,
+        "TN": 31445241,
+        "TP": 3436,
+        "n_pred": 11962,
+        "n_ref": 3513
+      },
+      {
+        "case_id": "VS-SEG-041",
+        "Dice": 0.6814558058925476,
+        "FN": 915,
+        "FP": 4,
+        "IoU": 0.5168243953732913,
+        "TN": 31455378,
+        "TP": 983,
+        "n_pred": 987,
+        "n_ref": 1898
+      },
+      {
+        "case_id": "VS-SEG-194",
+        "Dice": 0.7168168927077191,
+        "FN": 9410,
+        "FP": 675,
+        "IoU": 0.5586240098034925,
+        "TN": 31434431,
+        "TP": 12764,
+        "n_pred": 13439,
+        "n_ref": 22174
+      }
+    ],
+    "protocol": "Native nnU-Net evaluator, final checkpoint, default mirroring; distinct from seven-run common scorer."
+  }
+}

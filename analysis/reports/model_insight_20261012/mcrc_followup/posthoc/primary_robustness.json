@@ -1,0 +1,103 @@
+{
+  "label": "POST HOC, not preregistered. Primary endpoint itself: mcrc_followup/tables/summary.csv, row primary_13_slab.",
+  "n": 13,
+  "cases": [
+    "VS-MC-RC-009",
+    "VS-MC-RC-012",
+    "VS-MC-RC-016",
+    "VS-MC-RC-024",
+    "VS-MC-RC-026",
+    "VS-MC-RC-030",
+    "VS-MC-RC-045",
+    "VS-MC-RC-057",
+    "VS-MC-RC-076",
+    "VS-MC-RC-081",
+    "VS-MC-RC-097",
+    "VS-MC-RC-098",
+    "VS-MC-RC-100"
+  ],
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 42,
+    "method": "Paired patient percentile bootstrap of a mean difference (same convention as thesis_analysis.py)."
+  },
+  "primary_reproduced": {
+    "arm_difference_mean": 0.36371887511533346,
+    "ci95": [
+      0.21433752579369048,
+      0.5128533224079154
+    ],
+    "matches_summary_csv": true
+  },
+  "per_seed_paired_difference": {
+    "s42": {
+      "contrast": "slabthick_s42 - plain_s42",
+      "mean_difference": 0.39077527401843065,
+      "ci95": [
+        0.1882806687450949,
+        0.5941828272055705
+      ],
+      "plain_mean": 0.36080510884223965,
+      "augmented_mean": 0.7515803828606704,
+      "cases_improved": 8,
+      "cases_worse": 0
+    },
+    "s43": {
+      "contrast": "slabthick_s43 - plain_s43",
+      "mean_difference": 0.3366624762122362,
+      "ci95": [
+        0.14740252908020635,
+        0.5431073217667612
+      ],
+      "plain_mean": 0.367448532171669,
+      "augmented_mean": 0.7041110083839052,
+      "cases_improved": 8,
+      "cases_worse": 0
+    }
+  },
+  "direction_by_arm_mean": {
+    "threshold": "|arm_difference| < 0.05 = unchanged",
+    "improved": [
+      "VS-MC-RC-009",
+      "VS-MC-RC-012",
+      "VS-MC-RC-024",
+      "VS-MC-RC-026",
+      "VS-MC-RC-030",
+      "VS-MC-RC-057",
+      "VS-MC-RC-076",
+      "VS-MC-RC-081",
+      "VS-MC-RC-098"
+    ],
+    "unchanged": [
+      "VS-MC-RC-016",
+      "VS-MC-RC-045",
+      "VS-MC-RC-097",
+      "VS-MC-RC-100"
+    ],
+    "worse": [],
+    "n_improved": 9,
+    "n_unchanged": 4,
+    "n_worse": 0
+  },
+  "leave_one_out": {
+    "arm_difference_mean_min": 0.32452270216216145,
+    "case_left_out_at_min": "VS-MC-RC-081",
+    "arm_difference_mean_max": 0.3969619176679937,
+    "case_left_out_at_max": "VS-MC-RC-045",
+    "per_case_left_out": {
+      "VS-MC-RC-009": 0.35414910133208016,
+      "VS-MC-RC-012": 0.35255225784059313,
+      "VS-MC-RC-016": 0.39402878137494457,
+      "VS-MC-RC-024": 0.3606782902052083,
+      "VS-MC-RC-026": 0.3337922105490443,
+      "VS-MC-RC-030": 0.3430008542564087,
+      "VS-MC-RC-045": 0.3969619176679937,
+      "VS-MC-RC-057": 0.3606812503196306,
+      "VS-MC-RC-076": 0.3684128966859171,
+      "VS-MC-RC-081": 0.32452270216216145,
+      "VS-MC-RC-097": 0.3932218753467324,
+      "VS-MC-RC-098": 0.35369750463961064,
+      "VS-MC-RC-100": 0.3926457341190099
+    }
+  }
+}

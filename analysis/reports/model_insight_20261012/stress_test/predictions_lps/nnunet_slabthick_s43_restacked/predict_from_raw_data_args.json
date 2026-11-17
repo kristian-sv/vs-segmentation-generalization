@@ -1,0 +1,11 @@
+{
+    "folder_with_segs_from_prev_stage": null,
+    "list_of_lists_or_source_folder": "analysis/reports/model_insight_20261012/stress_test/nnunet_input/restacked",
+    "num_parts": 1,
+    "num_processes_preprocessing": 2,
+    "num_processes_segmentation_export": 2,
+    "output_folder_or_list_of_truncated_output_files": "analysis/reports/model_insight_20261012/stress_test/predictions_lps/nnunet_slabthick_s43_restacked",
+    "overwrite": true,
+    "part_id": 0,
+    "save_probabilities": false
+}

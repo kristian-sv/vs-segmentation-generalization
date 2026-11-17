@@ -1,0 +1,61 @@
+{
+  "note": "nnU-Net native validation (checkpoint_best, default test-time mirroring); not the preregistered common-scorer check",
+  "method": "paired patient percentile bootstrap, 10,000 replicates, seed 42",
+  "comparisons": {
+    "augmented arm - plain arm (seed means)": {
+      "mean": -0.003602144360551847,
+      "median": -0.0013534036396852522,
+      "ci95": [
+        -0.0119539521501033,
+        0.002031721573270412
+      ],
+      "patients_higher": 8,
+      "patients_lower": 16,
+      "mean_without_VS_SEG_122": -0.0001528709741182118
+    },
+    "slabthick_s42 - plain_s42": {
+      "mean": -0.007235225245290235,
+      "median": -0.000979160671867374,
+      "ci95": [
+        -0.02507548757074775,
+        0.00415581056037043
+      ],
+      "patients_higher": 11,
+      "patients_lower": 13,
+      "mean_without_VS_SEG_122": 0.0004884195083563723
+    },
+    "slabthick_s43 - plain_s43": {
+      "mean": 3.0936524186536696e-05,
+      "median": -0.0016426132071626354,
+      "ci95": [
+        -0.0029505136105060625,
+        0.0032274430606084406
+      ],
+      "patients_higher": 11,
+      "patients_lower": 13,
+      "mean_without_VS_SEG_122": -0.0007941614565928007
+    },
+    "plain_s43 - plain_s42 (seed only)": {
+      "mean": -0.004510429063634159,
+      "median": 0.0006015142912742522,
+      "ci95": [
+        -0.01993407082355169,
+        0.005301320695176534
+      ],
+      "patients_higher": 14,
+      "patients_lower": 10,
+      "mean_without_VS_SEG_122": 0.0021966218095194395
+    },
+    "slabthick_s43 - slabthick_s42 (seed only)": {
+      "mean": 0.0027557327058426125,
+      "median": 0.00020783287344394719,
+      "ci95": [
+        -0.00048687949477622873,
+        0.007385710566774135
+      ],
+      "patients_higher": 12,
+      "patients_lower": 12,
+      "mean_without_VS_SEG_122": 0.0009140408445702664
+    }
+  }
+}

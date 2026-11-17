@@ -1,0 +1,38 @@
+{
+  "patient_ids": [
+    "VS-MC-RC-009",
+    "VS-MC-RC-012",
+    "VS-MC-RC-016",
+    "VS-MC-RC-021",
+    "VS-MC-RC-024",
+    "VS-MC-RC-026",
+    "VS-MC-RC-028",
+    "VS-MC-RC-030",
+    "VS-MC-RC-043",
+    "VS-MC-RC-044",
+    "VS-MC-RC-045",
+    "VS-MC-RC-057",
+    "VS-MC-RC-060",
+    "VS-MC-RC-063",
+    "VS-MC-RC-076",
+    "VS-MC-RC-081",
+    "VS-MC-RC-082",
+    "VS-MC-RC-085",
+    "VS-MC-RC-097",
+    "VS-MC-RC-098",
+    "VS-MC-RC-099",
+    "VS-MC-RC-100"
+  ],
+  "dice": {
+    "n": 22,
+    "mean": 0.5426046225659872,
+    "median": 0.7882761768285922,
+    "sample_sd": 0.4075471909674274
+  },
+  "empty_counts": {
+    "nonempty": 16,
+    "both_empty": 0,
+    "prediction_empty": 6,
+    "reference_empty": 0
+  }
+}

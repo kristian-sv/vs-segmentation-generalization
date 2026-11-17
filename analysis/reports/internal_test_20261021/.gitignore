@@ -1,0 +1,4 @@
+# Large or machine-specific data stay local; tables and records are committed.
+*.nii
+*.nii.gz
+scores/c0_links/
