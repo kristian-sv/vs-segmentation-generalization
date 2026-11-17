@@ -1,0 +1,21 @@
+{
+  "model": "gpt-6-astra",
+  "tools": [
+    "info",
+    "stats",
+    "overview",
+    "view",
+    "review",
+    "threshold",
+    "grow",
+    "components",
+    "morph",
+    "exclude_box",
+    "union",
+    "save"
+  ],
+  "exact_prompt": true,
+  "effort": "high",
+  "image": "sha256:9560b625afffe5228b50f09a1a67795848029f6bc12ee0543087bd0f698a5b8f",
+  "request_sha256": "6948f7fe813563bb8f3c54055085ef5169c0e08afb7324c65dce51d6ebac906f"
+}

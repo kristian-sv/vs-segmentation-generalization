@@ -34,8 +34,9 @@ Its commit history is not published and is available on request.
 | **RQ2** | What in the images causes it? Which image properties define the cases where the model fails? | **Step 2: identify what breaks the model.** Orientation audit with a post hoc re-stacked rerun, whole-head versus slab strata, and a controlled stress test (eleven conditions) on the 24 validation patients, with no retraining. |
 | **RQ3** | Can it be fixed with the data we already have? Can a change to the training scheme, using only the existing training data, remove these failures? | **Step 3: retrain on targeted variation in the same data.** A pre-registered comparison of plain and slab/thick-slice-augmented nnU-Net, two seeds per arm, with the nnU-Net configuration held fixed. Primary endpoint: 13 MC-RC slab acquisitions. |
 
-An exploratory comparison with a tool-using LLM agent supports RQ2 in the
-thesis. Its records are kept outside this repository.
+An exploratory comparison with tool-using LLM agents supports RQ2 in the
+thesis. Its prompt, tools, code and score tables are in
+[`llm_agent/`](llm_agent/README.md).
 
 ## Headline results
 
@@ -91,6 +92,16 @@ model returned an empty prediction for four of them; the augmented model
 segmented three of those and scored 0 on VS-MC-RC-016. Image slices are derived
 from VS-MC-RC (CC BY 4.0; see Data).*
 
+**Exploratory LLM-agent comparison.** Three general-purpose language models
+segmented the same 22 MC-RC patients through 12 classical image tools, with no
+VS-specific training. Mean Dice was 0.778 (Claude Opus 5.5, pre-specified),
+0.845 and 0.854 (GPT-6 Astra at two effort settings, post hoc) and 0.828
+(Claude Fable 5.2, post hoc), against 0.761 for the augmented nnU-Net. The
+interval for the difference from the augmented nnU-Net excluded zero for the
+two Astra arms and included it for Opus and Fable. Each arm is a single run,
+and the prompt states that a tumor is present, which nnU-Net is not told. See
+[`llm_agent/`](llm_agent/README.md).
+
 **Limits stated in the thesis.** The MC-RC cases had been inspected before the
 intervention was designed and informed its ranges, so the improvement requires
 confirmation on an independently reserved cohort. The orientation correction
@@ -106,6 +117,7 @@ no detectable harm, not as a gain.
 | `src/` | Manual 3D U-Net pipeline: settings (`config.py`), patient-list and file-hash guard (`data.py`), preprocessing and patch sampling (`dataset.py`), training (`train.py`), run records (`run_logging.py`), and prediction export plus the common scorer used for both pipelines (`evaluate.py`). |
 | `experiments/` | [Experiment guide](experiments/README.md) with the design and commands, manual settings (`settings.json`), the patient partition and file hashes (`data_lock.json`), run launcher (`run.py`), Slurm scripts, nnU-Net preparation, and the augmentation trainer (`nnunet_trainers/nnUNetTrainerSlabThick.py`). |
 | `analysis/` | Failure analysis and stress test (`model_insight.py`, `model_insight.slurm`) with its case-figure helper (`make_case_figure.py`), the original comparison statistics (`thesis_analysis.py`), the scan-overlap audit (`audit_mcrc_vsseg_scan_overlap.py`), and the dated evidence under `analysis/reports/`; see the [report index](analysis/README.md). |
+| `llm_agent/` | Exploratory LLM-agent comparison: protocol, prompt, the 12 tools, runner and scoring code, score tables, and the per-case status records and tool logs; see its [README](llm_agent/README.md). No transcripts, images or masks. |
 | `metadata/` | Patient lists, scanner assignments, tumor volumes and the 22-patient external cohort table. Tables only; no images. |
 | `tests/` | Checks for scoring, prediction export and the nnU-Net runtime. |
 | `docs/` | The three figures shown on this page and the script that makes them (`make_readme_figures.py`). They are display versions in one blue and red palette; the thesis versions under `analysis/reports/` use blue and orange and are unchanged. |

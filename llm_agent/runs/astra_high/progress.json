@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "total": 22,
+  "completed": 22,
+  "state": "complete",
+  "started_at": "2026-11-08T14:23:05+0100",
+  "current_case": null,
+  "position": 22,
+  "finished_at": "2026-11-08T15:07:43+0100"
+}

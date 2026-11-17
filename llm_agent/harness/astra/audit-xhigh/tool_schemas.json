@@ -1,0 +1,428 @@
+[
+  {
+    "name": "info",
+    "description": "Geometry and intensity summary of the scan. Call this first.",
+    "inputSchema": {
+      "properties": {},
+      "title": "infoArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "stats",
+    "description": "Intensity statistics inside a box [i0,i1,j0,j1,k0,k1] (end exclusive) and/or inside a named mask.",
+    "inputSchema": {
+      "properties": {
+        "box": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Box"
+        },
+        "mask": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mask"
+        }
+      },
+      "title": "statsArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "overview",
+    "description": "Montage of n slices (max 16) evenly spaced across the whole scan in one plane: axial, coronal or sagittal.",
+    "inputSchema": {
+      "properties": {
+        "plane": {
+          "default": "axial",
+          "title": "Plane",
+          "type": "string"
+        },
+        "n": {
+          "default": 16,
+          "title": "N",
+          "type": "integer"
+        }
+      },
+      "title": "overviewArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "view",
+    "description": "Zoomed montage around center [i,j,k]: in-plane field of view fov_mm, n_slices (max 16) along the\n    plane normal spaced step_mm apart (default: slice spacing, at least 2 mm). Optional mask outline.",
+    "inputSchema": {
+      "properties": {
+        "plane": {
+          "title": "Plane",
+          "type": "string"
+        },
+        "center": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Center",
+          "type": "array"
+        },
+        "fov_mm": {
+          "default": 60.0,
+          "title": "Fov Mm",
+          "type": "number"
+        },
+        "n_slices": {
+          "default": 9,
+          "title": "N Slices",
+          "type": "integer"
+        },
+        "step_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Step Mm"
+        },
+        "mask": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mask"
+        }
+      },
+      "required": [
+        "plane",
+        "center"
+      ],
+      "title": "viewArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "review",
+    "description": "Outline montage covering the mask's full extent (+3 mm) along the plane normal, cropped to the mask\n    (+15 mm). Up to 24 panels per page; use page=2,... if the result says there are more pages.\n    Default plane: the acquired plane.",
+    "inputSchema": {
+      "properties": {
+        "mask": {
+          "title": "Mask",
+          "type": "string"
+        },
+        "plane": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Plane"
+        },
+        "page": {
+          "default": 1,
+          "title": "Page",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "mask"
+      ],
+      "title": "reviewArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "threshold",
+    "description": "New mask `out` = voxels with lo <= intensity <= hi, restricted to an optional box.",
+    "inputSchema": {
+      "properties": {
+        "out": {
+          "title": "Out",
+          "type": "string"
+        },
+        "lo": {
+          "title": "Lo",
+          "type": "number"
+        },
+        "hi": {
+          "title": "Hi",
+          "type": "number"
+        },
+        "box": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Box"
+        }
+      },
+      "required": [
+        "out",
+        "lo",
+        "hi"
+      ],
+      "title": "thresholdArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "grow",
+    "description": "New mask `out` = region connected (6-neighbourhood) to seed [i,j,k] with lo <= intensity <= hi,\n    restricted to an optional box.",
+    "inputSchema": {
+      "properties": {
+        "out": {
+          "title": "Out",
+          "type": "string"
+        },
+        "seed": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Seed",
+          "type": "array"
+        },
+        "lo": {
+          "title": "Lo",
+          "type": "number"
+        },
+        "hi": {
+          "title": "Hi",
+          "type": "number"
+        },
+        "box": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Box"
+        }
+      },
+      "required": [
+        "out",
+        "seed",
+        "lo",
+        "hi"
+      ],
+      "title": "growArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "components",
+    "description": "List connected components of `mask` (largest first, numbered from 1). With `out` and `keep`,\n    store only the listed component numbers as a new mask.",
+    "inputSchema": {
+      "properties": {
+        "mask": {
+          "title": "Mask",
+          "type": "string"
+        },
+        "out": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Out"
+        },
+        "keep": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Keep"
+        }
+      },
+      "required": [
+        "mask"
+      ],
+      "title": "componentsArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "morph",
+    "description": "Morphology with a ball of radius_mm (respects voxel spacing): op = open | close | dilate | erode |\n    fill (fill holes slice-wise in the acquired plane). Optional `within` restricts the result to another mask.",
+    "inputSchema": {
+      "properties": {
+        "mask": {
+          "title": "Mask",
+          "type": "string"
+        },
+        "out": {
+          "title": "Out",
+          "type": "string"
+        },
+        "op": {
+          "title": "Op",
+          "type": "string"
+        },
+        "radius_mm": {
+          "default": 1.0,
+          "title": "Radius Mm",
+          "type": "number"
+        },
+        "within": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Within"
+        }
+      },
+      "required": [
+        "mask",
+        "out",
+        "op"
+      ],
+      "title": "morphArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "exclude_box",
+    "description": "New mask `out` = `mask` with all voxels inside box [i0,i1,j0,j1,k0,k1] (end exclusive) removed.",
+    "inputSchema": {
+      "properties": {
+        "mask": {
+          "title": "Mask",
+          "type": "string"
+        },
+        "out": {
+          "title": "Out",
+          "type": "string"
+        },
+        "box": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Box",
+          "type": "array"
+        }
+      },
+      "required": [
+        "mask",
+        "out",
+        "box"
+      ],
+      "title": "exclude_boxArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "union",
+    "description": "New mask `out` = union of masks a and b.",
+    "inputSchema": {
+      "properties": {
+        "a": {
+          "title": "A",
+          "type": "string"
+        },
+        "b": {
+          "title": "B",
+          "type": "string"
+        },
+        "out": {
+          "title": "Out",
+          "type": "string"
+        }
+      },
+      "required": [
+        "a",
+        "b",
+        "out"
+      ],
+      "title": "unionArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "save",
+    "description": "Save `mask` as the final segmentation (label.nii.gz on the original scan grid). Can be called again\n    to overwrite; the last saved mask is the answer. Allowed even when the budget is exhausted.",
+    "inputSchema": {
+      "properties": {
+        "mask": {
+          "title": "Mask",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mask"
+      ],
+      "title": "saveArguments",
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "result": {
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "saveOutput",
+      "type": "object"
+    }
+  }
+]

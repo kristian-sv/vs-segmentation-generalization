@@ -1,0 +1,133 @@
+patient,run_order_case,stratum,source,status,dice,empty,pred_ml,ref_ml,vol_err_ml,vol_err_pct,hd95_mm
+VS-MC-RC-009,case_07,axial slab,LLM run1,ok,0.9294,0.0,1.47,1.4926,-0.0226,-1.5125,0.8203
+VS-MC-RC-009,case_07,axial slab,nnU-Net initial,ok,0.0,1.0,0.0,1.4926,-1.4926,-100.0,nan
+VS-MC-RC-009,case_07,axial slab,plain s42,ok,0.0,1.0,0.0,1.4926,-1.4926,-100.0,nan
+VS-MC-RC-009,case_07,axial slab,plain s43,ok,0.9159,0.0,1.4571,1.4926,-0.0355,-2.3804,0.9171
+VS-MC-RC-009,case_07,axial slab,augmented s42,ok,0.9277,0.0,1.4093,1.4926,-0.0833,-5.579,1.4788
+VS-MC-RC-009,case_07,axial slab,augmented s43,ok,0.9454,0.0,1.4741,1.4926,-0.0185,-1.2398,0.4102
+VS-MC-RC-012,case_03,non-axial,LLM run1,ok,0.9465,0.0,13.6257,14.7767,-1.1509,-7.7888,1.2423
+VS-MC-RC-012,case_03,non-axial,nnU-Net initial,ok,0.5997,0.0,6.3281,14.7767,-8.4486,-57.1754,9.0438
+VS-MC-RC-012,case_03,non-axial,plain s42,ok,0.04,0.0,0.3035,14.7767,-14.4731,-97.946,18.8468
+VS-MC-RC-012,case_03,non-axial,plain s43,ok,0.0,1.0,0.0,14.7767,-14.7767,-100.0,nan
+VS-MC-RC-012,case_03,non-axial,augmented s42,ok,0.8718,0.0,11.4869,14.7767,-3.2898,-22.2636,3.3
+VS-MC-RC-012,case_03,non-axial,augmented s43,ok,0.1636,0.0,1.32,14.7767,-13.4567,-91.067,14.0567
+VS-MC-RC-016,case_01,axial slab,LLM run1,ok,0.0,0.0,0.2422,0.0304,0.2118,696.5318,20.6697
+VS-MC-RC-016,case_01,axial slab,nnU-Net initial,ok,0.0,1.0,0.0,0.0304,-0.0304,-100.0,nan
+VS-MC-RC-016,case_01,axial slab,plain s42,ok,0.0,1.0,0.0,0.0304,-0.0304,-100.0,nan
+VS-MC-RC-016,case_01,axial slab,plain s43,ok,0.0,0.0,0.0077,0.0304,-0.0227,-74.5665,58.1996
+VS-MC-RC-016,case_01,axial slab,augmented s42,ok,0.0,0.0,0.0102,0.0304,-0.0202,-66.474,58.2086
+VS-MC-RC-016,case_01,axial slab,augmented s43,ok,0.0,1.0,0.0,0.0304,-0.0304,-100.0,nan
+VS-MC-RC-021,case_22,axial whole-head,LLM run1,ok,0.8816,0.0,1.5838,1.9652,-0.3814,-19.4097,2.0
+VS-MC-RC-021,case_22,axial whole-head,nnU-Net initial,ok,0.8828,0.0,1.6945,1.9652,-0.2707,-13.7746,47.5265
+VS-MC-RC-021,case_22,axial whole-head,plain s42,ok,0.8828,0.0,1.6945,1.9652,-0.2707,-13.7746,47.5265
+VS-MC-RC-021,case_22,axial whole-head,plain s43,ok,0.9093,0.0,1.677,1.9652,-0.2883,-14.6691,2.0
+VS-MC-RC-021,case_22,axial whole-head,augmented s42,ok,0.8922,0.0,1.6049,1.9652,-0.3604,-18.3363,2.0
+VS-MC-RC-021,case_22,axial whole-head,augmented s43,ok,0.8915,0.0,1.6154,1.9652,-0.3498,-17.7996,2.0
+VS-MC-RC-024,case_06,axial slab,LLM run1,ok,0.9505,0.0,24.6382,27.0982,-2.4601,-9.0783,1.591
+VS-MC-RC-024,case_06,axial slab,nnU-Net initial,ok,0.7581,0.0,16.5906,27.0982,-10.5077,-38.7762,10.6397
+VS-MC-RC-024,case_06,axial slab,plain s42,ok,0.7581,0.0,16.5906,27.0982,-10.5077,-38.7762,10.6397
+VS-MC-RC-024,case_06,axial slab,plain s43,ok,0.0,1.0,0.0,27.0982,-27.0982,-100.0,nan
+VS-MC-RC-024,case_06,axial slab,augmented s42,ok,0.9227,0.0,23.2282,27.0982,-3.87,-14.2815,3.125
+VS-MC-RC-024,case_06,axial slab,augmented s43,ok,0.6358,0.0,12.6305,27.0982,-14.4677,-53.3898,13.5452
+VS-MC-RC-026,case_04,axial slab,LLM run1,ok,0.8995,0.0,0.8456,0.8558,-0.0102,-1.1918,1.5482
+VS-MC-RC-026,case_04,axial slab,nnU-Net initial,ok,0.0,1.0,0.0,0.8558,-0.8558,-100.0,nan
+VS-MC-RC-026,case_04,axial slab,plain s42,ok,0.0,1.0,0.0,0.8558,-0.8558,-100.0,nan
+VS-MC-RC-026,case_04,axial slab,plain s43,ok,0.0,1.0,0.0,0.8558,-0.8558,-100.0,nan
+VS-MC-RC-026,case_04,axial slab,augmented s42,ok,0.6592,0.0,0.4627,0.8558,-0.3931,-45.9372,6.4564
+VS-MC-RC-026,case_04,axial slab,augmented s43,ok,0.7865,0.0,0.6382,0.8558,-0.2176,-25.4243,3.5082
+VS-MC-RC-028,case_05,axial whole-head,LLM run1,ok,0.8604,0.0,5.475,7.1812,-1.7062,-23.7598,3.0
+VS-MC-RC-028,case_05,axial whole-head,nnU-Net initial,ok,0.9265,0.0,6.2542,7.1812,-0.9271,-12.9098,1.5
+VS-MC-RC-028,case_05,axial whole-head,plain s42,ok,0.9265,0.0,6.2542,7.1812,-0.9271,-12.9098,1.5
+VS-MC-RC-028,case_05,axial whole-head,plain s43,ok,0.9258,0.0,6.2302,7.1812,-0.951,-13.2434,1.5
+VS-MC-RC-028,case_05,axial whole-head,augmented s42,ok,0.9215,0.0,6.174,7.1812,-1.0073,-14.0267,1.5
+VS-MC-RC-028,case_05,axial whole-head,augmented s43,ok,0.9224,0.0,6.1948,7.1812,-0.9865,-13.7366,1.5
+VS-MC-RC-030,case_17,axial slab,LLM run1,ok,0.8449,0.0,0.8711,1.1133,-0.2422,-21.7544,2.5
+VS-MC-RC-030,case_17,axial slab,nnU-Net initial,ok,0.456,0.0,0.3309,1.1133,-0.7824,-70.2807,5.3415
+VS-MC-RC-030,case_17,axial slab,plain s42,ok,0.456,0.0,0.3309,1.1133,-0.7824,-70.2807,5.3415
+VS-MC-RC-030,case_17,axial slab,plain s43,ok,0.0,0.0,0.084,1.1133,-1.0293,-92.4561,65.0692
+VS-MC-RC-030,case_17,axial slab,augmented s42,ok,0.8224,0.0,0.9102,1.1133,-0.2031,-18.2456,51.4417
+VS-MC-RC-030,case_17,axial slab,augmented s43,ok,0.8583,0.0,0.8746,1.1133,-0.2387,-21.4386,1.6008
+VS-MC-RC-043,case_13,non-axial,LLM run1,ok,0.0,0.0,1.9674,0.2213,1.7462,789.2241,31.0912
+VS-MC-RC-043,case_13,non-axial,nnU-Net initial,ok,0.0,0.0,1.6565,0.2213,1.4353,648.7069,84.1933
+VS-MC-RC-043,case_13,non-axial,plain s42,ok,0.7686,0.0,0.2403,0.2213,0.0191,8.6207,1.9531
+VS-MC-RC-043,case_13,non-axial,plain s43,ok,0.7718,0.0,0.2384,0.2213,0.0172,7.7586,1.9531
+VS-MC-RC-043,case_13,non-axial,augmented s42,ok,0.7739,0.0,0.2174,0.2213,-0.0038,-1.7241,1.3811
+VS-MC-RC-043,case_13,non-axial,augmented s43,ok,0.7815,0.0,0.2327,0.2213,0.0114,5.1724,1.4945
+VS-MC-RC-044,case_14,axial whole-head,LLM run1,ok,0.9054,0.0,0.348,0.392,-0.044,-11.2245,1.0
+VS-MC-RC-044,case_14,axial whole-head,nnU-Net initial,ok,0.8366,0.0,0.33,0.392,-0.062,-15.8163,1.0
+VS-MC-RC-044,case_14,axial whole-head,plain s42,ok,0.8366,0.0,0.33,0.392,-0.062,-15.8163,1.0
+VS-MC-RC-044,case_14,axial whole-head,plain s43,ok,0.8579,0.0,0.333,0.392,-0.059,-15.051,1.0
+VS-MC-RC-044,case_14,axial whole-head,augmented s42,ok,0.8436,0.0,0.324,0.392,-0.068,-17.3469,1.0
+VS-MC-RC-044,case_14,axial whole-head,augmented s43,ok,0.848,0.0,0.325,0.392,-0.067,-17.0918,1.0
+VS-MC-RC-045,case_21,axial slab,LLM run1,ok,0.8834,0.0,1.7511,2.2026,-0.4514,-20.4961,2.1638
+VS-MC-RC-045,case_21,axial slab,nnU-Net initial,ok,0.8773,0.0,1.7425,2.2026,-0.4601,-20.8877,4.8234
+VS-MC-RC-045,case_21,axial slab,plain s42,ok,0.8773,0.0,1.7425,2.2026,-0.4601,-20.8877,4.8234
+VS-MC-RC-045,case_21,axial slab,plain s43,ok,0.9034,0.0,1.8565,2.2026,-0.346,-15.7093,2.2199
+VS-MC-RC-045,case_21,axial slab,augmented s42,ok,0.8339,0.0,1.5939,2.2026,-0.6086,-27.6327,5.6714
+VS-MC-RC-045,case_21,axial slab,augmented s43,ok,0.8765,0.0,1.7463,2.2026,-0.4562,-20.7137,2.8695
+VS-MC-RC-057,case_12,axial slab,LLM run1,ok,0.781,0.0,0.4197,0.6551,-0.2354,-35.9322,1.297
+VS-MC-RC-057,case_12,axial slab,nnU-Net initial,ok,0.8591,0.0,0.4952,0.6551,-0.1599,-24.4068,4.0892
+VS-MC-RC-057,case_12,axial slab,plain s42,ok,0.8591,0.0,0.4952,0.6551,-0.1599,-24.4068,4.0892
+VS-MC-RC-057,case_12,axial slab,plain s43,ok,0.086,0.0,0.0294,0.6551,-0.6257,-95.5085,11.1874
+VS-MC-RC-057,case_12,axial slab,augmented s42,ok,0.861,0.0,0.4952,0.6551,-0.1599,-24.4068,1.1601
+VS-MC-RC-057,case_12,axial slab,augmented s43,ok,0.8844,0.0,0.5213,0.6551,-0.1338,-20.4237,0.8978
+VS-MC-RC-060,case_15,non-axial,LLM run1,ok,0.9261,0.0,12.8905,12.6035,0.287,2.2768,1.557
+VS-MC-RC-060,case_15,non-axial,nnU-Net initial,ok,0.0135,0.0,0.0857,12.6035,-12.5178,-99.3198,34.1193
+VS-MC-RC-060,case_15,non-axial,plain s42,ok,0.2309,0.0,1.7508,12.6035,-10.8527,-86.1087,34.6662
+VS-MC-RC-060,case_15,non-axial,plain s43,ok,0.2229,0.0,1.6171,12.6035,-10.9864,-87.1693,25.9899
+VS-MC-RC-060,case_15,non-axial,augmented s42,ok,0.2292,0.0,1.6752,12.6035,-10.9283,-86.7082,25.9899
+VS-MC-RC-060,case_15,non-axial,augmented s43,ok,0.2269,0.0,1.6498,12.6035,-10.9537,-86.9099,25.9899
+VS-MC-RC-063,case_16,axial whole-head,LLM run1,ok,0.8745,0.0,6.0814,7.7684,-1.687,-21.7165,2.1925
+VS-MC-RC-063,case_16,axial whole-head,nnU-Net initial,ok,0.8986,0.0,6.4107,7.7684,-1.3577,-17.4771,2.0
+VS-MC-RC-063,case_16,axial whole-head,plain s42,ok,0.8986,0.0,6.4107,7.7684,-1.3577,-17.4771,2.0
+VS-MC-RC-063,case_16,axial whole-head,plain s43,ok,0.89,0.0,6.2816,7.7684,-1.4868,-19.1397,2.0
+VS-MC-RC-063,case_16,axial whole-head,augmented s42,ok,0.8898,0.0,6.2848,7.7684,-1.4836,-19.0981,2.0
+VS-MC-RC-063,case_16,axial whole-head,augmented s43,ok,0.8931,0.0,6.3558,7.7684,-1.4126,-18.1837,2.0
+VS-MC-RC-076,case_02,axial slab,LLM run1,ok,0.6316,0.0,0.3214,0.6952,-0.3738,-53.7664,1.82
+VS-MC-RC-076,case_02,axial slab,nnU-Net initial,ok,0.0,1.0,0.0,0.6952,-0.6952,-100.0,nan
+VS-MC-RC-076,case_02,axial slab,plain s42,ok,0.0,1.0,0.0,0.6952,-0.6952,-100.0,nan
+VS-MC-RC-076,case_02,axial slab,plain s43,ok,0.301,0.0,0.1606,0.6952,-0.5346,-76.8959,46.6728
+VS-MC-RC-076,case_02,axial slab,augmented s42,ok,0.4169,0.0,0.2388,0.6952,-0.4564,-65.6471,45.9487
+VS-MC-RC-076,case_02,axial slab,augmented s43,ok,0.4989,0.0,0.2418,0.6952,-0.4534,-65.2174,5.7062
+VS-MC-RC-081,case_10,axial slab,LLM run1,ok,0.6854,0.0,0.2182,0.3912,-0.1731,-44.2339,2.8125
+VS-MC-RC-081,case_10,axial slab,nnU-Net initial,ok,0.0,1.0,0.0,0.3912,-0.3912,-100.0,nan
+VS-MC-RC-081,case_10,axial slab,plain s42,ok,0.0,1.0,0.0,0.3912,-0.3912,-100.0,nan
+VS-MC-RC-081,case_10,axial slab,plain s43,ok,0.0,1.0,0.0,0.3912,-0.3912,-100.0,nan
+VS-MC-RC-081,case_10,axial slab,augmented s42,ok,0.8069,0.0,0.2646,0.3912,-0.1267,-32.3723,1.1267
+VS-MC-RC-081,case_10,axial slab,augmented s43,ok,0.8613,0.0,0.301,0.3912,-0.0902,-23.0643,0.6988
+VS-MC-RC-082,case_20,axial whole-head,LLM run1,ok,0.908,0.0,1.9133,2.2426,-0.3293,-14.6844,1.5
+VS-MC-RC-082,case_20,axial whole-head,nnU-Net initial,ok,0.9104,0.0,1.8903,2.2426,-0.3523,-15.7083,1.983
+VS-MC-RC-082,case_20,axial whole-head,plain s42,ok,0.9104,0.0,1.8903,2.2426,-0.3523,-15.7083,1.983
+VS-MC-RC-082,case_20,axial whole-head,plain s43,ok,0.9205,0.0,1.938,2.2426,-0.3046,-13.5816,1.297
+VS-MC-RC-082,case_20,axial whole-head,augmented s42,ok,0.9138,0.0,1.9085,2.2426,-0.3341,-14.8982,1.4788
+VS-MC-RC-082,case_20,axial whole-head,augmented s43,ok,0.9172,0.0,1.915,2.2426,-0.3275,-14.6056,1.4788
+VS-MC-RC-085,case_08,axial whole-head,LLM run1,ok,0.8784,0.0,2.2658,2.8371,-0.5713,-20.1363,2.2088
+VS-MC-RC-085,case_08,axial whole-head,nnU-Net initial,ok,0.9095,0.0,2.424,2.8371,-0.4131,-14.5601,2.0
+VS-MC-RC-085,case_08,axial whole-head,plain s42,ok,0.9095,0.0,2.424,2.8371,-0.4131,-14.5601,2.0
+VS-MC-RC-085,case_08,axial whole-head,plain s43,ok,0.9285,0.0,2.5014,2.8371,-0.3357,-11.834,1.3258
+VS-MC-RC-085,case_08,axial whole-head,augmented s42,ok,0.9149,0.0,2.4275,2.8371,-0.4096,-14.4362,1.875
+VS-MC-RC-085,case_08,axial whole-head,augmented s43,ok,0.9199,0.0,2.4328,2.8371,-0.4043,-14.2503,1.875
+VS-MC-RC-097,case_11,axial slab,LLM run1,ok,0.7485,0.0,2.7586,4.3645,-1.6059,-36.7941,6.1568
+VS-MC-RC-097,case_11,axial slab,nnU-Net initial,ok,0.808,0.0,3.1758,4.3645,-1.1887,-27.2353,5.4621
+VS-MC-RC-097,case_11,axial slab,plain s42,ok,0.808,0.0,3.1758,4.3645,-1.1887,-27.2353,5.4621
+VS-MC-RC-097,case_11,axial slab,plain s43,ok,0.8282,0.0,3.3508,4.3645,-1.0137,-23.2256,5.076
+VS-MC-RC-097,case_11,axial slab,augmented s42,ok,0.8244,0.0,3.3293,4.3645,-1.0352,-23.7179,5.1554
+VS-MC-RC-097,case_11,axial slab,augmented s43,ok,0.8311,0.0,3.4875,4.3645,-0.877,-20.0931,5.1292
+VS-MC-RC-098,case_19,axial slab,LLM run1,ok,0.8409,0.0,0.1486,0.2027,-0.0541,-26.6816,0.7422
+VS-MC-RC-098,case_19,axial slab,nnU-Net initial,ok,0.0,1.0,0.0,0.2027,-0.2027,-100.0,nan
+VS-MC-RC-098,case_19,axial slab,plain s42,ok,0.0,1.0,0.0,0.2027,-0.2027,-100.0,nan
+VS-MC-RC-098,case_19,axial slab,plain s43,ok,0.8513,0.0,0.1518,0.2027,-0.0509,-25.1121,0.8298
+VS-MC-RC-098,case_19,axial slab,augmented s42,ok,0.9144,0.0,0.1741,0.2027,-0.0286,-14.1256,0.3711
+VS-MC-RC-098,case_19,axial slab,augmented s43,ok,0.9049,0.0,0.17,0.2027,-0.0327,-16.1435,0.5248
+VS-MC-RC-099,case_09,axial whole-head,LLM run1,ok,0.8258,0.0,0.4214,0.5827,-0.1612,-27.6743,1.2305
+VS-MC-RC-099,case_09,axial whole-head,nnU-Net initial,ok,0.8831,0.0,0.4946,0.5827,-0.0881,-15.1148,1.5
+VS-MC-RC-099,case_09,axial whole-head,plain s42,ok,0.8831,0.0,0.4946,0.5827,-0.0881,-15.1148,1.5
+VS-MC-RC-099,case_09,axial whole-head,plain s43,ok,0.8915,0.0,0.4969,0.5827,-0.0858,-14.725,1.2305
+VS-MC-RC-099,case_09,axial whole-head,augmented s42,ok,0.8985,0.0,0.5059,0.5827,-0.0767,-13.1659,1.2804
+VS-MC-RC-099,case_09,axial whole-head,augmented s43,ok,0.8889,0.0,0.4943,0.5827,-0.0883,-15.1581,1.2305
+VS-MC-RC-100,case_18,non-axial,LLM run1,ok,0.9093,0.0,1.2254,1.4396,-0.2142,-14.8804,0.91
+VS-MC-RC-100,case_18,non-axial,nnU-Net initial,ok,0.0,1.0,0.0,1.4396,-1.4396,-100.0,nan
+VS-MC-RC-100,case_18,non-axial,plain s42,ok,0.892,0.0,1.1854,1.4396,-0.2543,-17.6636,1.0106
+VS-MC-RC-100,case_18,non-axial,plain s43,ok,0.891,0.0,1.4507,1.4396,0.0111,0.769,75.9043
+VS-MC-RC-100,case_18,non-axial,augmented s42,ok,0.9093,0.0,1.2599,1.4396,-0.1798,-12.4878,0.91
+VS-MC-RC-100,case_18,non-axial,augmented s43,ok,0.9069,0.0,1.2551,1.4396,-0.1845,-12.8174,0.91

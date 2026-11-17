@@ -1,0 +1,7 @@
+{
+  "cases_verified": 22,
+  "metrics_per_case": 7,
+  "matched_original_opus_scores": true,
+  "reviewer_exports_during_test": false,
+  "original_scores_sha256": "715337a4dc377715eed33360bb1682431465b4940e98c2466bf5d7364e106f67"
+}

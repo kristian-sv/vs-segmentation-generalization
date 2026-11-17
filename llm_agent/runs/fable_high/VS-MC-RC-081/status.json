@@ -1,0 +1,60 @@
+{
+ "patient_id": "VS-MC-RC-081",
+ "status": "ok",
+ "foreground_voxels": 683,
+ "unexpected_files": [],
+ "returncode": 0,
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "image": "llm-seg-tools:v1",
+ "claude_cli": "2.1.311 (Claude Code)",
+ "wall_s": 38,
+ "num_turns": 15,
+ "is_error": false,
+ "usage": {
+  "input_tokens": 24,
+  "cache_creation_input_tokens": 9633,
+  "cache_read_input_tokens": 102287,
+  "output_tokens": 2486,
+  "output_tokens_details": {
+   "thinking_tokens": 828
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9633,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 346,
+    "cache_read_input_tokens": 12887,
+    "cache_creation_input_tokens": 293,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 293
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_equivalent": 0.20974350000000005,
+ "run_order_case": "case_10",
+ "models_seen": [
+  "claude-fable-5-2"
+ ],
+ "input_sha256": "516e7f4d912afc5ca55fe750f820e38ace77cf8065d807758ee0b85f5dde6814",
+ "staged_sha256": "516e7f4d912afc5ca55fe750f820e38ace77cf8065d807758ee0b85f5dde6814",
+ "prompt_sha256": "aa9e523489703a4f84152735b939622ecccb130e3faeb77cbf251a942688c975",
+ "tools_sha256": "658e5160a4e7a8a749c94c393264b35c2f14a83d1358cbd6331f35232f189de5",
+ "image_id": "sha256:9560b625afffe5228b50f09a1a67795848029f6bc12ee0543087bd0f698a5b8f",
+ "authentication": "Claude subscription",
+ "finished_at": "2026-11-12T11:23:32+00:00"
+}

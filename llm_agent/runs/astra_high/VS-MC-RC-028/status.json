@@ -1,0 +1,45 @@
+{
+  "patient_id": "VS-MC-RC-028",
+  "run_order_case": "case_05",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "status": "ok",
+  "foreground_voxels": 5727,
+  "unexpected_files": [],
+  "wall_s": 190,
+  "image": "sha256:9560b625afffe5228b50f09a1a67795848029f6bc12ee0543087bd0f698a5b8f",
+  "error": null,
+  "result": {
+    "turn": {
+      "id": "01a1bb5b-4036-75f3-b241-f3d88b825307",
+      "rootTurnId": "01a1bb5b-4036-75f3-b241-f3d88b825307",
+      "items": [
+        {
+          "type": "agentMessage",
+          "id": "msg_058c5a36fde6a8ef016af07a6080ec87d298a41c04b6f50d96",
+          "text": "Saved the tumor segmentation as `label.nii.gz`.",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null,
+          "startedAtMs": 1794144864573,
+          "completedAtMs": 1794144864976
+        }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1794144682,
+      "completedAt": 1794144864,
+      "durationMs": 182941
+    },
+    "wall_s": 184,
+    "tool_calls": 32
+  },
+  "input_sha256": "953c1dba56ed744ada628d0241fb3281e7104ae54bbdaadaa369574c508cc298",
+  "prompt_sha256": "aa9e523489703a4f84152735b939622ecccb130e3faeb77cbf251a942688c975",
+  "tools_sha256": "658e5160a4e7a8a749c94c393264b35c2f14a83d1358cbd6331f35232f189de5",
+  "authentication": "ChatGPT subscription",
+  "cli_version": "0.167.0",
+  "returncode": 0
+}
