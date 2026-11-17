@@ -3,6 +3,15 @@
 Code and experiment records for the MSc thesis of the same title by
 Kristian Svendsen, University of Bergen, 2026.
 
+<p align="center">
+  <img src="docs/readme_banner.png" alt="Panels a to c: a routine slab MRI, the plain nnU-Net with no prediction, and the augmented nnU-Net outlining the tumor. Panel d: Dice for 13 slab patients, mean 0.364 for plain and 0.728 for augmented training">
+</p>
+
+*(a–c) One of the 13 routine slab scans, with the reference outline in blue and
+the model prediction in red (models with seed 42). (d) Dice for each of the 13
+patients under plain and augmented training (mean of two seeds each); the
+black line is the mean. One patient is still missed after augmentation.*
+
 The thesis asks why T1 MRI segmentation models for vestibular schwannoma (VS)
 that were trained on the standardized VS-SEG dataset fail on routine
 multicenter T1 MRI (VS-MC-RC), and whether targeted training on the existing
@@ -42,6 +51,16 @@ whole-head scans and 0.342 on eleven axial slabs. On the 24 validation
 patients, a nominal 40 mm slab with 3.3 mm slices reduced nnU-Net mean Dice
 from 0.932 to 0.546, with nine empty predictions.
 
+<p align="center">
+  <img src="docs/stress_test.png" alt="Stress test on the 24 validation patients: mean Dice of the manual U-Net and nnU-Net under simulated slabs, thicker slices and coronal slabs">
+</p>
+
+*Stress test on the 24 validation patients, with no retraining. C0 is the
+unchanged scan; S50, S40 and S33 are slabs of nominally 50, 40 and 33 mm; T3
+and T4 are 3 mm and 4 mm slices; S40T3 combines a 40 mm slab with 3.3 mm
+slices; the last panel simulates coronal slabs. Labels give the number of
+empty predictions.*
+
 **Step 3 (RQ3).**
 
 | Evaluation | Plain nnU-Net | Augmented nnU-Net |
@@ -61,18 +80,11 @@ source-validation check required the augmented mean to be no more than 0.01
 below the plain mean, and passed.
 
 <p align="center">
-  <img src="analysis/reports/model_insight_20261012/mcrc_followup/figures/slab_slope.png" width="440" alt="Dice per patient for the 13 MC-RC slab cases under the plain and the augmented nnU-Net">
-</p>
-
-*Dice for each of the 13 MC-RC slab patients under the plain and the augmented
-nnU-Net (mean of seeds 42 and 43). The black line is the arm mean.*
-
-<p align="center">
-  <img src="analysis/reports/model_insight_20261012/mcrc_followup/figures/cases_followup.png" width="560" alt="Five MC-RC slab patients with reference and predicted outlines for the plain and the augmented nnU-Net">
+  <img src="docs/cases_followup.png" width="560" alt="Five MC-RC slab patients with reference and predicted outlines for the plain and the augmented nnU-Net">
 </p>
 
 *Five MC-RC slab patients: image, plain nnU-Net and augmented nnU-Net (both
-seed 42, re-stacked inputs). Blue: reference. Orange: prediction. The plain
+seed 42, re-stacked inputs). Blue: reference. Red: prediction. The plain
 model returned an empty prediction for four of them; the augmented model
 segmented three of those and scored 0 on VS-MC-RC-016. Image slices are derived
 from VS-MC-RC (CC BY 4.0; see Data).*
@@ -94,6 +106,7 @@ no detectable harm, not as a gain.
 | `analysis/` | Failure analysis and stress test (`model_insight.py`, `model_insight.slurm`) with its case-figure helper (`make_case_figure.py`), the original comparison statistics (`thesis_analysis.py`), the scan-overlap audit (`audit_mcrc_vsseg_scan_overlap.py`), and the dated evidence under `analysis/reports/`; see the [report index](analysis/README.md). |
 | `metadata/` | Patient lists, scanner assignments, tumor volumes and the 22-patient external cohort table. Tables only; no images. |
 | `tests/` | Checks for scoring, prediction export and the nnU-Net runtime. |
+| `docs/` | The three figures shown on this page and the script that makes them from stored figures and tables (`make_readme_figures.py`). They show the stored orange in red; the thesis versions under `analysis/reports/` are unchanged. |
 | `requirements/`, `requirements.txt` | Python package lists for the analysis and preprocessing helpers. |
 
 `data/`, `outputs/`, `logs/` and the `work/` directories are local and are not
@@ -177,7 +190,8 @@ Two figures show image slices from VS-MC-RC patients with reference and
 predicted outlines: `cases_followup` and `cases_contralateral` (PNG and PDF)
 under `analysis/reports/model_insight_20261012/mcrc_followup/`. They are
 derived from the VS-MC-RC collection (Kujawa et al., 2024) and are shared
-under its CC BY 4.0 license.
+under its CC BY 4.0 license. The banner and the case figure in `docs/` are
+made from the first of them.
 
 ## Software environment
 
@@ -202,4 +216,4 @@ the top of `analysis/model_insight.py`.
 The code and the author's records in this repository are released under the
 MIT License; see [LICENSE](LICENSE). The license does not cover the VS-SEG and
 VS-MC-RC data, which are not distributed here. The two figures named under
-Data remain under CC BY 4.0.
+Data, and the two figures in `docs/` made from them, remain under CC BY 4.0.
