@@ -5,7 +5,7 @@ VS-MC-RC T1 scans of the thesis. Each model worked alone in a sandbox, through
 12 classical image tools (thresholding, region growing, morphology, viewing),
 with no VS-specific training and no access to reference masks. The masks were
 scored in the same way as the nnU-Net predictions. The design is in
-[PROTOCOL.md](PROTOCOL.md); the thesis reports the experiment in Sections 3.6.5
+[PROTOCOL.md](PROTOCOL.md); the thesis reports the experiment in Sections 3.5.7
 and 4.7 and in its appendices.
 
 This folder holds the prompt, the tools, the runner and scoring code, the
