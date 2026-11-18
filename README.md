@@ -1,4 +1,4 @@
-# Deep Learning for Vestibular Schwannoma Segmentation: Explaining and Reducing Failures on Routine Multicenter MRI
+# Deep Learning for Vestibular Schwannoma Segmentation: Explaining and Reducing Failures on Routine Multicenter&nbsp;MRI
 
 Code and experiment records for the MSc thesis of the same title by
 Kristian Svendsen, University of Bergen, 2026.
