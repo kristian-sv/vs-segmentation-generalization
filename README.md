@@ -24,15 +24,17 @@ segmentation masks or model checkpoints.
 
 The repository is a single snapshot of the code and records at thesis
 submission in November 2026. The work was developed in a private repository.
-Its commit history is not published and is available on request.
+Its commit history is not published and is available on request. The tag
+`thesis-submission-2026-11-20` marks the state of this repository at
+submission.
 
 ## Research questions and the three steps
 
 | | Question | Step |
 |---|---|---|
-| **RQ1** | Where does generalization break down? How far does a VS segmentation model trained on standardized T1 MRI from VS-SEG carry over to routine clinical T1 scans from VS-MC-RC? | **Step 1: establish the pipeline and measure transfer.** Six manual 3D U-Net runs (baseline and lower dropout, seeds 42–44) and one nnU-Net run, all trained on the same 193 VS-SEG patients and scored in common on 24 validation and 22 MC-RC patients. |
-| **RQ2** | What in the images causes it? Which image properties define the cases where the model fails? | **Step 2: identify what breaks the model.** Orientation audit with a post hoc re-stacked rerun, whole-head versus slab strata, and a controlled stress test (eleven conditions) on the 24 validation patients, with no retraining. |
-| **RQ3** | Can it be fixed with the data we already have? Can a change to the training scheme, using only the existing training data, remove these failures? | **Step 3: retrain on targeted variation in the same data.** A pre-registered comparison of plain and slab/thick-slice-augmented nnU-Net, two seeds per arm, with the nnU-Net configuration held fixed. Primary endpoint: 13 MC-RC slab acquisitions. |
+| **RQ1** | Where does generalization break down? How well does a VS segmentation model that was trained on standardized T1 MRI from one hospital perform on routine T1 scans from other hospitals? | **Step 1: establish the pipeline and measure transfer.** Six manual 3D U-Net runs (baseline and lower dropout, seeds 42–44) and one nnU-Net run, all trained on the same 193 VS-SEG patients and scored in common on 24 validation and 22 MC-RC patients. |
+| **RQ2** | Which image properties explain the failures? On the routine scans, results range from complete misses to good segmentations. What do the scans on which the model fails have in common, and how do they differ from the scans on which it works? | **Step 2: identify what breaks the model.** Orientation audit with a post hoc re-stacked rerun, whole-head versus slab strata, and a controlled stress test (eleven conditions) on the 24 validation patients, with no retraining. |
+| **RQ3** | Can the failures be reduced with the data we already have? Can the failures be reduced by changing the training data instead of the network? The change studied here alters the existing training images during training so that they imitate the image properties found in RQ2 (slab and thick-slice augmentation), while a proven pipeline (nnU-Net) is kept fixed. | **Step 3: retrain on targeted variation in the same data.** A pre-registered comparison of plain and slab/thick-slice-augmented nnU-Net, two seeds per arm, with the nnU-Net configuration held fixed. Primary endpoint: 13 MC-RC slab acquisitions. |
 
 An exploratory comparison with tool-using LLM agents supports RQ2 in the
 thesis. Its prompt, tools, code and score tables are in
@@ -164,7 +166,9 @@ that locates it was changed to match.
 
 The protocols were committed to the private development repository before the
 corresponding training or inference. They were not submitted to an external
-registry; "pre-registered" is used in this sense.
+registry; "pre-registered" is used in this sense. The commit times cannot be
+checked from this repository alone. The private history can be shown to the
+examiners and the supervisor on request.
 
 The commit hashes below, the hashes cited in the thesis, and the hashes quoted
 inside the records (for example under `analysis/reports/internal_test_20261021/`)
@@ -187,11 +191,15 @@ and `f25e035`.
 No images, masks or checkpoints are distributed here. The thesis uses two
 published collections:
 
-- **VS-SEG**: 242 patients from a single radiosurgery setting. Shapey et al.,
-  *Scientific Data*, 2021, [doi:10.1038/s41597-021-01064-w](https://doi.org/10.1038/s41597-021-01064-w).
-- **VS-MC-RC**: routine multicenter MRI, distributed through The Cancer
-  Imaging Archive (TCIA) under a CC BY 4.0 license. Kujawa et al., *Frontiers
-  in Computational Neuroscience*, 2024,
+- **VS-SEG**: 242 patients from a single radiosurgery setting, distributed
+  through The Cancer Imaging Archive (TCIA) under a CC BY 4.0 license.
+  Dataset: [doi:10.7937/TCIA.9YTJ-5Q73](https://doi.org/10.7937/TCIA.9YTJ-5Q73).
+  Paper: Shapey et al., *Scientific Data*, 2021,
+  [doi:10.1038/s41597-021-01064-w](https://doi.org/10.1038/s41597-021-01064-w).
+- **VS-MC-RC**: routine multicenter MRI, distributed through TCIA under a
+  CC BY 4.0 license.
+  Dataset: [doi:10.7937/HRZH-2N82](https://doi.org/10.7937/HRZH-2N82).
+  Paper: Kujawa et al., *Frontiers in Computational Neuroscience*, 2024,
   [doi:10.3389/fncom.2024.1365727](https://doi.org/10.3389/fncom.2024.1365727).
   The local download corresponded to TCIA version 1 (124 patients, 354 series).
 
@@ -224,6 +232,24 @@ system memory per job. nnU-Net was version 2.8.1.
 Commands for training, prediction and scoring are in the
 [experiment guide](experiments/README.md); the analysis commands are listed at
 the top of `analysis/model_insight.py`.
+
+## Use of generative AI
+
+Generative AI tools were used throughout this project: GPT-6 Astra (OpenAI)
+through Codex and Claude (Anthropic) through Claude Code. The code in this
+repository for preprocessing, training, analysis and figures was written
+mainly by AI coding agents under the author's direction. The author specified
+what to build, ran the experiments and checked the results. The dated reports
+under `analysis/reports/` and the README files were drafted with the same
+agents and checked by the author.
+
+The author formulated the research questions with guidance from the
+supervisor, decided which experiments to run, inspected the cases and drew the
+conclusions, and takes full responsibility for the content. The thesis gives
+the full statement in its section "Use of Generative AI".
+
+Claude Opus 5.5, Claude Fable 5.2 and GPT-6 Astra are also objects of study in
+the exploratory comparison in [`llm_agent/`](llm_agent/README.md).
 
 ## License
 
